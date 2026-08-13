@@ -1,0 +1,1 @@
+This repository contains the class notes for CIS 200 in Fall 2026. Navigate inside the week of class, then which lab number, and then which day of the week. Each of these "day of class" folders contains the general notes for the day as well as any examples worked during class.

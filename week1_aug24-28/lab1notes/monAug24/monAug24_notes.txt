@@ -1,0 +1,58 @@
+CIS 200 - Programming Fundamentals
+
+Julie Thornton
+
+/////////////////////////////////////////
+
+What is this class about?
+- More involved programming class
+- Java first, C# at end
+
+
+Class structure most weeks:
+- Background reading
+- Video tutorial (starting next week)
+- 2 labs (just one this week)
+- 1 project
+
+
+Syllabus.
+
+
+Canvas setup.
+
+
+
+/////////////////////////////////
+
+Java/VS Code/git setup.
+
+How to set up own computer?
+
+
+/////////////////////////////////
+
+See how to clone repo
+
+
+See Example.java - what is it doing?
+
+
+How to compile/run.
+
+
+////////////////////////////////
+
+How to access lab assignment/repo
+
+** can't access your repository?
+
+** git not recognized?
+
+
+Lab 1 -> what to do, how to get checked off.
+
+
+////////////////////////////////
+
+What to do rest of week.
