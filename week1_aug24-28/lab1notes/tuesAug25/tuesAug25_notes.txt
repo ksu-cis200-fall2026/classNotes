@@ -9,6 +9,17 @@ What is this class about?
 - Java first, C# at end
 
 
+
+///////////////////////////////////
+
+Syllabus.
+
+Getting help:
+    - office hours
+    - Ed Discussion
+        extra credit: bug bounty, helping hand
+
+
 Class structure most weeks:
 - Background reading
 - Video tutorial (starting next week)
@@ -16,8 +27,50 @@ Class structure most weeks:
 - 1 project
 
 
-Syllabus.
+Graded work weights/categories
+    -> labs (15%)
+    -> tutorials (5%)
+    -> projects (15%)
+    -> midterm exams (45%)
+    -> final exam (20%)
 
+
+
+///////////////////////////////////
+
+Policies.
+    - labs (attendance)
+        about 26 total 
+        can drop 4 lowest for any reason
+        will get full credit if you finish OR if you work the whole time
+
+    - tutorials
+        submit up to 3 days late for 10% off per day 
+
+    - projects
+        about 11
+        drop the lowest 
+        submit up to 3 days late for 10% off per day 
+
+    - exams (3 midterm exam, 1 final)
+        if your final is better than one of your midterms,
+        your final grade will replace the lowest midterm grade 
+
+        if you miss an exam, you can make it up if you can arrange
+            it with me before the next class period 
+        otherwise, your final grade will replace it
+
+
+
+AI usage - write the code yourself, use it to explain / find a bug /etc. 
+
+
+Collaboration - same, write yourself but talk about approaches
+
+
+///////////////////////////
+
+Course calendar.
 
 Canvas setup.
 
@@ -25,15 +78,16 @@ Canvas setup.
 
 /////////////////////////////////
 
-Java/VS Code/git setup.
+Course textbook.
+
+
+Java/Visual Studio Code/git setup.
+
 
 How to set up own computer?
 
 
 /////////////////////////////////
-
-How to get class repo?
-
 
 See how to clone repo
 

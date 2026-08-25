@@ -16,8 +16,56 @@ Class structure most weeks:
 - 1 project
 
 
+///////////////////////////////////
+
 Syllabus.
 
+- office hours
+
+- getting help
+    extra credit: bug bounty, helping hand
+
+
+- graded work weights/categories
+    -> labs (about 26) - 15%
+    -> tutorials (about 13) - 5%
+    -> projects (about 11) - 15%
+    -> exams (3 midterms) - 45%
+    -> final exam - 20%
+
+
+
+- policies
+    -> labs. everybody gets 4 drops.
+        full credit: finished before the end 
+            OR if you work the whole time (even if not finished)
+
+    -> tutorials. 
+        no drops (but talk to me if something comes up)
+        can submit up to 3 days late for 10% off per day
+        try to finish before Monday's lab
+
+    -> projects.
+        drop lowest grade 
+        can submit up to 3 days late for 10% off per day
+
+    -> exams
+        if you do better on the final than one of the midterms
+        the final grade replaces your lowest midterm 
+
+        miss exam: can make it up before next class period 
+            otherwise, final will replace it
+
+
+AI usage
+
+
+Collaboration
+
+
+///////////////////////////
+
+Course calendar.
 
 Canvas setup.
 
@@ -25,7 +73,11 @@ Canvas setup.
 
 /////////////////////////////////
 
+Course textbook.
+
+
 Java/VS Code/git setup.
+
 
 How to set up own computer?
 
@@ -33,6 +85,8 @@ How to set up own computer?
 /////////////////////////////////
 
 How to get class repo?
+
+How to see class notes?
 
 
 See how to clone repo
