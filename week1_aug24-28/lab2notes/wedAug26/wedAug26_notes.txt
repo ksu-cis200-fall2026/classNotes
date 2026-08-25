@@ -1,0 +1,212 @@
+Lab 2: today
+
+How to view modules in Canvas
+
+//////////////////////////
+
+Setting up your computer.
+
+What if "javac" command is not found?
+
+What if "git" command is not found?
+
+What if repository is not found?
+
+///////////////////////////
+
+Project 1 due Friday, August 28
+    --> what to do?
+
+    --> how to check submission?
+
+
+
+
+Documentation template:
+
+/**
+ * (description of project)
+ *
+ * @author (your name)
+ * @version (which project number this is)
+ */
+
+//////////////////////////
+
+What to do for next week?
+
+//////////////////////////
+
+System.out.println("text");
+System.out.println();
+System.out.print("\ttext\n");
+System.out.println("another");
+
+
+
+\n, \t
+
+
+//////////////////////////
+
+Variables.
+
+
+
+Data types in Java.
+
+    int - 
+    double - 
+    String - 
+    char - 
+    boolean - 
+
+
+
+
+Declaring variables.
+
+    type name;
+
+
+    int age;
+
+
+
+
+Initializing/assign variables.
+
+    name = literal/expression/other variable;
+
+    age = 17;
+
+    age *= 2; 
+
+    age++; 
+
+
+
+
+Literals.
+
+
+
+Operations.
+
++, -, *, /
+
+int x = 7;
+int y = 4;
+int num = x - y*2; 
+
+
+
+//////////////////////////
+
+User input.
+
+1) At the very top of the file:
+
+
+
+
+2) At the beginning of the main method (before 
+any user input):
+
+
+
+
+3) For each piece of user input:
+
+//print a prompt
+
+
+//read in what they type
+//for an int
+
+
+//for a double
+
+
+//for a String (text)
+
+
+
+//////////////////////////
+
+Printing variables.
+
+int age = 17;
+
+//How to print:
+//I am 17 years old
+
+
+
+
+
+Formatted printing.
+System.out.printf("I am %d years old%n", age);
+
+%d - int
+%f - double
+%s - String
+%c - char
+
+
+
+
+
+int num = 3;
+int denom = 4;
+
+//Want to print:
+//Fraction: 3/4
+
+
+
+double pi = 3.14159;
+
+//Want to print:
+//Pi rounded is 3.14
+
+
+//////////////////////////
+
+Example: burgers are $6.79 each. Get number of burgers, 
+print total.
+
+
+/////////////////////////
+
+Integer division.
+
+    int result = 17/4; 
+
+    double result = 17.0/4; 
+
+
+
+Modulo.
+
+    int leftover = 17 % 4; 
+
+
+//////////////////////////
+
+Example: pizzas have 8 slices. 
+Get #pizzas, #people. 
+
+Print how many slices everyone can have, 
+how many are leftover.
+
+
+//////////////////////////
+
+how to find class notes
+
+/////////////////////////
+
+discuss Lab 2
+
+printing a %
