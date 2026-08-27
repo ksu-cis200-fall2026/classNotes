@@ -1,0 +1,137 @@
+Video tutorial due tonight (hopefully you've already done it)
+
+Try to do tutorials before first lab of the week
+    (usually they will be due on Monday)
+
+Labs 3 and 4 this week
+
+
+Project 2: Friday, September 4
+
+/////////////////
+
+Type casting
+
+double val = 3.5;
+
+int whole = val;    //ok?
+
+
+int whole = (int)val; //ok?
+
+
+
+int top = 17;
+int bottom = 3;
+double answer1 = top/bottom; 
+
+double answer2 = ((double)top)/bottom; 
+
+
+/////////////////
+
+int x = 0;
+
+if (x < 10) {
+    System.out.println("one");
+}
+else if (x < 20) {
+    System.out.println("two");
+}
+
+What prints? 
+
+
+
+/////////////////
+
+if (y > 0) {
+    if (y < 10) {
+        System.out.println("here");
+    }
+}
+
+--> is this OK? is there a way to simplify?
+
+///////////////////
+
+Suppose "num" is a user input.
+
+    if (num < 3) {
+        double price = num*5.99;
+    }
+    else {
+        double price = num*3.99;
+    }
+    System.out.printf("Total is: $%.2f%n", price);
+
+What is this trying to do? 
+
+Will it compile? 
+
+
+
+Fix:
+
+
+////////////////////
+
+Variable scope.
+
+{
+    type name;
+
+}
+
+visible inside {} where declared
+
+
+////////////////////
+
+Assume "x" is a user input.
+
+int answer;
+    if (x < 0) {
+        answer = 7;
+    }
+    else if (x >= 0) { 
+        answer = 14;
+    }
+
+    System.out.printf("Answer is: %d%n", answer);
+
+What is this trying to do? Will it compile?
+
+
+
+Fix:
+
+
+--> rules for initializing variables
+
+
+
+////////////////////////
+
+Example: bags of chips are buy one get one free at the store.
+Full price is $5.99 each.
+
+Customers are limited to 10 bags total.
+
+(is there any other input that would be invalid?)
+
+////////////////////////
+
+Lab 3: pizza order
+
+- Usert enters #pizzas
+- Full price is $12.99 per pizza
+- First 4 pizzas are full prices, pizzas beyond 4 are $9.99 each
+- Tip: 20% pre-tax total
+- Tax: 9.5% pre-tax total
+- Overall: pre-tax + tip + tax
+
+
+Print error if #pizzas is invalid
+
+Use nested conditionals
