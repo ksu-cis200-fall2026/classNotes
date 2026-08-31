@@ -5,8 +5,13 @@ Try to do tutorials before first lab of the week
 
 Labs 3 and 4 this week
 
-
 Project 2: Friday, September 4
+
+
+Where to find office hours?
+Where to find class notes?
+
+Reminder: save before add/commit/push
 
 /////////////////
 
@@ -14,16 +19,21 @@ Type casting
 
 double val = 3.5;
 
-int whole = val;    //ok?
+int whole = val;    //ok? NO!
+
+int a = 3;
+double test = a; // OK!
 
 
-int whole = (int)val; //ok?
+int whole = (int)val; //ok? yes, will chop off decimal (3)
+
+
 
 
 
 int top = 17;
 int bottom = 3;
-double answer1 = top/bottom; 
+double answer1 = top/bottom; //answer1 is 5.0
 
 double answer2 = ((double)top)/bottom; 
 
@@ -39,7 +49,7 @@ else if (x < 20) {
     System.out.println("two");
 }
 
-What prints? 
+What prints? just "one"
 
 
 
@@ -52,10 +62,23 @@ if (y > 0) {
 }
 
 --> is this OK? is there a way to simplify?
+nested conditionals
+
+
+if (y > 0 && y < 10) {
+    System.out.println("here");
+}
+
+or: ||
 
 ///////////////////
 
 Suppose "num" is a user input.
+
+scope of a variable:
+{
+
+}
 
     if (num < 3) {
         double price = num*5.99;
@@ -67,11 +90,20 @@ Suppose "num" is a user input.
 
 What is this trying to do? 
 
-Will it compile? 
+Will it compile? no
 
 
 
 Fix:
+
+    double price;
+    if (num < 3) {
+        price = num*5.99;
+    }
+    else {
+        price = num*3.99;
+    }
+    System.out.printf("Total is: $%.2f%n", price);
 
 
 ////////////////////
@@ -100,11 +132,21 @@ Assume "x" is a user input.
 
     System.out.printf("Answer is: %d%n", answer);
 
-What is this trying to do? Will it compile?
+What is this trying to do? Will it compile? no
 
 
 
 Fix:
+
+int answer;
+    if (x < 0) {
+        answer = 7;
+    }
+    else { 
+        answer = 14;
+    }
+
+    System.out.printf("Answer is: %d%n", answer);
 
 
 --> rules for initializing variables
@@ -124,13 +166,28 @@ Customers are limited to 10 bags total.
 
 Lab 3: pizza order
 
-- Usert enters #pizzas
+- User enters #pizzas
 - Full price is $12.99 per pizza
 - First 4 pizzas are full prices, pizzas beyond 4 are $9.99 each
 - Tip: 20% pre-tax total
 - Tax: 9.5% pre-tax total
 - Overall: pre-tax + tip + tax
 
+if (#pizzas is valid) {
+    if (pizzas <= 4) {
+        //full price for all
+    }
+    else {
+        //full price for first 4, then $9.99 for additionals
+    }
+    //print the price
+    //calculate and print the tip
+    //calculate and print the tax
+    //calculate and print the overall
+}
+else {
+    //error, tell them what would be valid
+}
 
 Print error if #pizzas is invalid
 
