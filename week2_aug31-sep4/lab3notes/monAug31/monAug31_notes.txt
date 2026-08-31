@@ -90,7 +90,7 @@ visible inside {} where declared
 
 Assume "x" is a user input.
 
-int answer;
+    int answer;
     if (x < 0) {
         answer = 7;
     }
