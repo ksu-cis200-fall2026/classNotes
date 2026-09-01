@@ -1,0 +1,6 @@
+1) My hometown is Wichita, KS
+
+2) I was born in 1982
+
+3) The program will crash if you enter a non-integer year. It will also print a negative age if you enter a year
+that is before my birth year.
