@@ -1,0 +1,87 @@
+Lab 4: today
+
+Reminder: naming folders/files
+Reminder: documentation
+
+No class next Monday (September 7)
+Tutorial next week is due Tuesday, September 8
+Only one lab next week (Wednesday)
+
+/////////////////
+
+Project 2: Friday, September 4
+
+speed factor (0-9)
+    55 mph
+    factor / 10 to get a percentage
+    find that percentage of 25
+
+recommended approach
+    figure out total driving time in seconds
+    how many seconds they can drive in a day
+
+    60*60*max driving hours
+    
+
+    whole days: total driving time seconds / how many seconds they can drive in a day
+    unaccounted for seconds: total driving time seconds % how many seconds they can drive in a day
+
+
+To leave the program:
+    return;
+
+/////////////////
+
+Today: intro to loops
+
+We will just look at while loops today.
+
+
+while(condition) {
+    statements
+}
+
+/////////////////
+
+How to print "hello" 5 times?
+
+
+/////////////////
+
+How to print 1-5?
+
+
+/////////////////
+
+(separate file)
+
+How to find factorial?
+
+/////////////////
+
+Look at Lab 4.
+
+    Enter initial odometer mileage: 1000
+    Enter number of readings: 3
+
+    Enter odometer reading #1: 1350
+    Enter gallons of gas purchased: 12.7
+    Fuel economy from reading #1: 27.56 mpg
+
+    Enter odometer reading #2: 1400
+    Enter gallons of gas purchased: 4.1
+    Fuel economy from reading #2: 12.2 mpg
+
+    Enter odometer reading #3: 1700
+    Enter gallons of gas purchased: 12.9
+    Fuel economy from reading #3: 23.26 mpg
+
+    Overall fuel economy: 23.57 mpg
+
+
+
+--> what are we doing first?
+--> what are we repeating?
+--> what do we need to keep track of as we loop?
+
+Pseudocode:
