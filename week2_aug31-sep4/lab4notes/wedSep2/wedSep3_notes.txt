@@ -60,8 +60,9 @@ First:
         whole days: totalSeconds / maxSeconds
         leftover seconds: totalSeconds % maxSeconds
 
-        get from leftover seconds the #hours 
+        get #hours from leftover seconds
             can do exactly the same / and % combo 
+            whole hours: leftoverSeconds / (number seconds in an hour)
 
     - find unaccounted for seconds (how?)
 
