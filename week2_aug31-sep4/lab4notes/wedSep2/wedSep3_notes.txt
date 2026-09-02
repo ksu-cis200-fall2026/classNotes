@@ -1,7 +1,16 @@
 Lab 4: today
 
 Reminder: naming folders/files
+
+
 Reminder: documentation
+
+/**
+ * (description)
+ * 
+ * @author (you)
+ * @version (project number)
+ */
 
 No class next Monday (September 7)
 Tutorial next week is due Tuesday, September 8
@@ -11,20 +20,29 @@ Only one lab next week (Wednesday)
 
 Project 2: Friday, September 4
 
-speed factor (0-9)
-    55 mph
-    factor / 10 to get a percentage
-    find that percentage of 25
+User inputs:
+- distance
+- speed factor (0-9, inclusive)
+- round trip? (y/n)
+    (how to get input?)
 
-recommended approach
-    figure out total driving time in seconds
-    how many seconds they can drive in a day
+- max driving hours pre day
 
-    60*60*max driving hours
-    
+Output:
+- total distance
+- speed (in mph)
+- days/hours/minutes/seconds of trip
 
-    whole days: total driving time seconds / how many seconds they can drive in a day
-    unaccounted for seconds: total driving time seconds % how many seconds they can drive in a day
+
+speed: 55 + (some percentage of 25)
+    use factor/10 to get a percentage (0.0 to 0.9)
+
+
+First:
+    - find total driving time of trip in seconds
+    - find max seconds driven per day
+    - find #whole days (how?)
+    - find unaccounted for seconds (how?)
 
 
 To leave the program:
