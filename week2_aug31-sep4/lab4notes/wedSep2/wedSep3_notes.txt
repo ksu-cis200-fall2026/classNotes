@@ -2,6 +2,9 @@ Lab 4: today
 
 Reminder: naming folders/files
 
+    projects/proj2/Proj2.java
+    projects/proj2/Proj2notes.txt
+
 
 Reminder: documentation
 
@@ -26,7 +29,11 @@ User inputs:
 - round trip? (y/n)
     (how to get input?)
 
-- max driving hours pre day
+    char input = s.nextLine().toLowerCase().charAt(0);
+    if (input == 'y')
+
+- max driving hours per day
+
 
 Output:
 - total distance
@@ -36,13 +43,28 @@ Output:
 
 speed: 55 + (some percentage of 25)
     use factor/10 to get a percentage (0.0 to 0.9)
+    entered 4
+    speed: 55 + 0.4*25 = 55 + 10 = 65 mph
 
 
 First:
     - find total driving time of trip in seconds
+        in hours: distance / speed
+        totalSeconds: (distance / speed)*60*60
+
     - find max seconds driven per day
+        maxSeconds: maxHours*60*60
+
     - find #whole days (how?)
+
+        whole days: totalSeconds / maxSeconds
+        leftover seconds: totalSeconds % maxSeconds
+
+        get from leftover seconds the #hours 
+            can do exactly the same / and % combo 
+
     - find unaccounted for seconds (how?)
+
 
 
 To leave the program:
@@ -63,10 +85,25 @@ while(condition) {
 
 How to print "hello" 5 times?
 
+int count = 0; //how many hellos I've printed
+
+//while I've printed less than 5 hellos
+while (count < 5) {
+    System.println("hello");
+    count += 1;
+}
+
 
 /////////////////
 
-How to print 1-5?
+How to print 1-10?
+
+//what number we're ready to print
+int num = 1;
+while (num <= 10) {
+    System.out.println(num);
+    num++;
+}
 
 
 /////////////////
@@ -103,3 +140,31 @@ Look at Lab 4.
 --> what do we need to keep track of as we loop?
 
 Pseudocode:
+
+user input:
+    initial (odometer)
+    readings
+
+//how many readings I've gotten
+count = 0
+
+//previous odometer reading
+previous = initial
+
+//total gallons purchased
+totalGallons = 0
+
+while count < readings:
+    get curOdometer from user
+    get curGallons from user
+
+    economy = (curOdometer-previous)/curGallons
+    previous = curOdometer
+
+    totalGallons += curGallons
+
+    count++
+
+overall fuel economy:
+    totalDistance / totalGallons
+    (previous-initial) / totalGallons
