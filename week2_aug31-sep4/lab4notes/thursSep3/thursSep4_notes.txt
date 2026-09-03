@@ -1,6 +1,8 @@
 Lab 4: today
 
 Reminder: naming folders/files
+    projects/proj2/Proj2.java
+
 Reminder: documentation
 
 /**
@@ -22,12 +24,15 @@ Only one lab next week (Thursday)
 Project 2: Friday, September 4
 
 User inputs:
-- distance
-- speed factor (0-9, inclusive)
+- distance (maybe 1500 miles)
+- speed factor (0-9, inclusive) 
 - round trip? (y/n)
     (how to get input?)
 
-- max driving hours pre day
+    char input = s.nextLine().toLowerCase().charAt(0);
+
+- max driving hours per day
+
 
 Output:
 - total distance
@@ -38,6 +43,9 @@ Output:
 speed: 55 + (some percentage of 25)
     use factor/10 to get a percentage (0.0 to 0.9)
 
+factor: 4
+4 is 40%, 0.4 * 25 = 10
+speed: 65 mph (the 55 plus the 10)
 
 First:
     - find total driving time of trip in seconds
@@ -45,6 +53,19 @@ First:
     - find #whole days (how?)
     - find unaccounted for seconds (how?)
 
+how many total hours would the trip take?
+    distance 
+    speed 
+    totalHours: distance/speed
+
+how many totalSeconds: totalHours*60*60
+maxSeconds (max seconds they're willing to drive):
+    maxHours*60*60
+
+days: totalSeconds / maxSeconds
+leftover seconds: totalSeconds % maxSeconds
+
+to get hours: leftover seconds / seconds in a day
 
 To leave the program:
     return;
@@ -64,10 +85,29 @@ while(condition) {
 
 How to print "hello" 5 times?
 
+//how many times I've printed hello so far
+int count = 0;
+
+//while I haven't printed hello 5 times
+while (count < 5) {
+    System.out.println("hello");
+
+    //I've printed hello one more time
+    count++;
+}
+
+kill an infinite loop: Ctrl-C
+
 
 /////////////////
 
-How to print 1-5?
+How to print 1-10?
+
+int num = 1;
+while (num <= 10) {
+    System.out.println(num);
+    num++;
+}
 
 
 /////////////////
@@ -97,10 +137,28 @@ Look at Lab 4.
 
     Overall fuel economy: 23.57 mpg
 
-
+overall: total miles / (total gallons of gas)
 
 --> what are we doing first?
 --> what are we repeating?
 --> what do we need to keep track of as we loop?
 
 Pseudocode:
+
+user input:
+    initialMileage
+    readings
+
+curReading = 0
+previousMileage = initialMileage
+totalGallons = 0
+
+while curReading < readings
+    curReading++
+    curMileage = user input
+    curGallons = user input
+    economy = (curMileage-previousMileage)/curGallons
+    previousMileage = curMileage
+    totalGallons += curGallons
+
+overall: (previousMileage-initialMileage) / (total gallons of gas)
