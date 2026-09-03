@@ -65,7 +65,8 @@ maxSeconds (max seconds they're willing to drive):
 days: totalSeconds / maxSeconds
 leftover seconds: totalSeconds % maxSeconds
 
-to get hours: leftover seconds / seconds in a day
+to get hours: leftover seconds / seconds in an hour 
+(etc.)
 
 To leave the program:
     return;
