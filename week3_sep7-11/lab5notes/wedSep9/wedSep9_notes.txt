@@ -7,72 +7,42 @@ Project 3 due Friday. Check file/folder names -
     proj3
     Proj3.java
 
+
+**Descriptive error messages
+**Packages
+
+
+///
+
 Prime factorization of 12?
 
-12 = 2*2*3
+12 = 
 
 
 Prime factorization of 7?
 
-7 = 7
+7 = 
 
 
 Finding prime factorization:
 
 num: user input
 factor: start at 2
-left: num
-
-while(condition):
-    if factor divides in evenly to left (using %):
-        print factor
-        divide factor out of left (update left)
-    else:
-        factor++
+leftover: num
 
 
-How to tell if prime? last factor checked would be 
-    original input. Also would have just printed one factor.
 
+
+How to tell if prime? 
 
 How to find most frequent factor?
 
-finding the biggest value of a collection of numbers
-
-keep track of the biggest you've seen so far 
-
-loop through the collection
-    see if current item > biggest
-        biggest = item
-
-
-
-
-Update:
-
-num: user input
-factor: start at 2
-left: num
-mostFreqFactor: dummy (0)
-freqFactorCount: dumy (0)
-curFactorCount: 0
-
-while(condition):
-    if factor divides in evenly to left (using %):
-        print factor
-        divide factor out of left (update left)
-        increase current factor count
-    else:
-        see if curFactorCount > freqFactorCount:
-            freqFactorCount = curFactorCount
-            mostFreqFactor = factor
-        reset curFactorCount to 0
-        factor++
-
-
-
 
 /////////////////////////
+
+for loops - redo factorial example
+
+//////////////////////////
 
 Do-while loops.
 
@@ -147,14 +117,7 @@ generate random number 0-4?
 
 ///////////////////
 
-Example: have user guess a random number
-
-
-///////////////////
-
 Look at lab. 
 - rolling a dice?
 - making it pause before dice rolls?
 
-To get program to pause after prompt:
-s.nextLine();

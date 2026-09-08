@@ -7,6 +7,13 @@ Project 3 due Friday. Check file/folder names -
     proj3
     Proj3.java
 
+
+**Descriptive error messages
+**Packages
+
+
+///
+
 Prime factorization of 12?
 
 12 = 2*2*3
