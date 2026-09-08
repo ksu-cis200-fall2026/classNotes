@@ -1,0 +1,25 @@
+1) Test case by hand. Suppose the input was:
+    630 miles, speed factor of 3, round trip, 8 hours max driving per day
+
+    MPH: 55 + (0.3*25) = 62.5 mph
+    Total miles: 1260
+
+    Driving time: 1260/62.5 = 20.16 hours
+        20 hours needs to be done across 2 days at 8 hours per day (acounting for 16 hours total)
+        There are 4.16 more hours to account for, so 4 full hours with 0.16 leftover
+        0.16 hours is 0.16*60*60 = 576 seconds, which is 9 minutes and 36 seconds
+    With constrants: 2 days (worth 8 hours each), 4 hours, 9 minutes, 36 seconds
+
+2) Test cases (only 3 are needed): 
+    - Negative distance input (outputs an error and exits)
+    - Speed factor less than 0 or greater than 9 (assumes speed factor of 5)
+    - Enters something other than y/Y/n/N for round trip (outputs an error, says non-round trip will be used)
+    - Negative max hours (outputs error, says will assume 8)
+    - 0 max hours (outputs error, says will assume 8)
+    - 25 max hours (outputs error, says will assume 8)
+    - Test case above: 630 miles, round trip, 8 hours max driving per day
+        (matches work by hand)
+    - Others that should be done: something with 0 full days, something with non-round trip, different max hour input,
+                                different speed factors
+
+3) Describe an error and how it was fixed. (Could be anything.)

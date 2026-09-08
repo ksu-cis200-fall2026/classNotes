@@ -1,0 +1,160 @@
+Exam 1 is Wednesday, September 16
+
+
+Project 3 due Friday. Check file/folder names - 
+    will be a deduction for naming.
+
+    proj3
+    Proj3.java
+
+Prime factorization of 12?
+
+12 = 2*2*3
+
+
+Prime factorization of 7?
+
+7 = 7
+
+
+Finding prime factorization:
+
+num: user input
+factor: start at 2
+left: num
+
+while(condition):
+    if factor divides in evenly to left (using %):
+        print factor
+        divide factor out of left (update left)
+    else:
+        factor++
+
+
+How to tell if prime? last factor checked would be 
+    original input. Also would have just printed one factor.
+
+
+How to find most frequent factor?
+
+finding the biggest value of a collection of numbers
+
+keep track of the biggest you've seen so far 
+
+loop through the collection
+    see if current item > biggest
+        biggest = item
+
+
+
+
+Update:
+
+num: user input
+factor: start at 2
+left: num
+mostFreqFactor: dummy (0)
+freqFactorCount: dumy (0)
+curFactorCount: 0
+
+while(condition):
+    if factor divides in evenly to left (using %):
+        print factor
+        divide factor out of left (update left)
+        increase current factor count
+    else:
+        see if curFactorCount > freqFactorCount:
+            freqFactorCount = curFactorCount
+            mostFreqFactor = factor
+        reset curFactorCount to 0
+        factor++
+
+
+
+
+/////////////////////////
+
+Do-while loops.
+
+do {
+    statements
+} while (condition);
+
+
+How are they different from while loops?
+
+
+Best situations to use a do-while?
+
+
+////////////////////////////
+
+break - exits the loop
+
+//What does this do?
+
+int x = 0;
+int y = 0;
+do {
+    x++;
+    if (x == 1) {
+        break;
+    }
+    y+=x;
+} while (x < 5);
+System.out.println(y);
+
+
+///////////////////////////
+
+continue - moves to the next iteration as long
+    as condition is still true
+
+
+//What does this do?
+
+int x = 0;
+int y = 0;
+do {
+    x++;
+    if (x == 1) {
+        continue;
+    }
+    y+=x;
+} while (x < 5);
+System.out.println(y);
+
+
+////////////////////////////
+
+Random numbers.
+
+import?
+
+
+
+create random number generator?
+
+
+
+
+
+generate random number 0-4?
+
+
+
+
+
+///////////////////
+
+Example: have user guess a random number
+
+
+///////////////////
+
+Look at lab. 
+- rolling a dice?
+- making it pause before dice rolls?
+
+To get program to pause after prompt:
+s.nextLine();
