@@ -18,15 +18,21 @@ public class Factorial {
         //validate input
         if (num >= 1) {
             //find the factorial of the input number
-
+            /*
             int cur = num;
             int product = 1;
             while (cur >= 1) {
                 product = product*cur;
                 cur--;
             }
+            */
 
-            //print: 5! = 120
+            int product = 1;
+            for (int cur = num; cur >= 1; cur--) {
+                product = product*cur;
+            }
+
+            //print: 5! = 5*4*3*2*1=120
             System.out.printf("%d! = %d%n", num, product);
         }
         else {

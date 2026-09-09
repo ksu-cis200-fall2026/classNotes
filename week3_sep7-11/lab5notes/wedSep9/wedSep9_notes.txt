@@ -16,12 +16,12 @@ Project 3 due Friday. Check file/folder names -
 
 Prime factorization of 12?
 
-12 = 
+12 = 2*2*3
 
 
 Prime factorization of 7?
 
-7 = 
+7 = 7
 
 
 Finding prime factorization:
@@ -30,12 +30,33 @@ num: user input
 factor: start at 2
 leftover: num
 
+while leftover > 1
+    if leftover % factor == 0
+        print factor
+        divide leftover by factor 
+    else:
+        factor++
 
 
 
 How to tell if prime? 
+    could introduce a count of how many factors you found
+    or, the last factor you checked would be the number itself
+
 
 How to find most frequent factor?
+
+recommend having a current factor count that you update
+in the if and the else
+
+
+    keep a most frequent factor count before loop (start at 0)
+    keep a current factor count (start at 0)
+    in if (factor appeared again): increase current factor count
+    in else (factor done):
+        if current factor count is bigger than most frequent:
+            update most frequent
+        reset current factor count to 0 (to count the next factor)
 
 
 /////////////////////////
@@ -52,9 +73,10 @@ do {
 
 
 How are they different from while loops?
-
+    does the statements BEFORE the condition 
 
 Best situations to use a do-while?
+    menu loops, etc. 
 
 
 ////////////////////////////
@@ -74,6 +96,7 @@ do {
 } while (x < 5);
 System.out.println(y);
 
+y would be 0
 
 ///////////////////////////
 
@@ -94,6 +117,7 @@ do {
 } while (x < 5);
 System.out.println(y);
 
+would skip adding 1, but would add the others 
 
 ////////////////////////////
 
@@ -101,17 +125,17 @@ Random numbers.
 
 import?
 
-
+import java.util.*;
 
 create random number generator?
 
-
+Random r = new Random();
 
 
 
 generate random number 0-4?
 
-
+int val = r.nextInt(5);
 
 
 
@@ -119,5 +143,9 @@ generate random number 0-4?
 
 Look at lab. 
 - rolling a dice?
+
+int dice = r.nextInt(6)+1;
+
 - making it pause before dice rolls?
 
+s.nextLine();
