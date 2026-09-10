@@ -19,23 +19,17 @@ public class Factorial {
         if (num >= 1) {
             //find the factorial of the input number
 
-            int cur = num;
             int product = 1;
-            while (cur >= 1) {
+            for (int cur = num; cur >= 1; cur--) {
                 product = product*cur;
-                cur--;
             }
 
+            //5! = 5*4*3*2*1
             //print: 5! = 120
             System.out.printf("%d! = %d%n", num, product);
         }
         else {
             System.out.println("Error - input must be a positive whole number");
         }
-
-        
-
-        //5! = 5*4*3*2*1
-        //how to add input validation?
     }
 }

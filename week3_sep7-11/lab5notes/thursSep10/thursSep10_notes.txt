@@ -16,12 +16,12 @@ Project 3 due Friday. Check file/folder names -
 
 Prime factorization of 12?
 
-12 = 
+12 = 2*2*3
 
 
 Prime factorization of 7?
 
-7 = 
+7 = 7
 
 
 Finding prime factorization:
@@ -30,17 +30,53 @@ num: user input
 factor: start at 2
 leftover: num
 
+while we're not done factoring (while leftover > 1)
+    //can factor be pulled out of leftover?
+    if leftover % factor == 0:
+        print factor
+        update leftover to divide out factor
+    else:
+        factor++
 
 
+How to tell if prime? last factor you checked is the number itself
 
-How to tell if prime? 
 
 How to find most frequent factor?
+
+keep track of most frequent factor
+keep track of count for the current factor
+while we're not done factoring (while leftover > 1)
+    //can factor be pulled out of leftover?
+    if leftover % factor == 0:
+        print factor
+        update leftover to divide out factor
+        increase current factor count
+    else:
+        if my current factor count > my most frequent factor count:
+            update most frequent to be the current count
+        factor++
+        reset current factor count to 0
 
 
 /////////////////////////
 
-for loops - redo factorial example
+int count = 0;
+while (count < 5) {
+    System.out.println("hello");
+    count++;
+}
+
+--> how to write as a for loop?
+
+for (int count = 0; count < 5; count++) {
+    System.out.println("hello");
+}
+
+
+
+
+--> redo factorial example
 
 //////////////////////////
 
@@ -52,47 +88,68 @@ do {
 
 
 How are they different from while loops?
+    always executes statements at least once
 
 
 Best situations to use a do-while?
+    menus, etc.
 
 
 ////////////////////////////
 
-break - exits the loop
+What is this code doing?
 
-//What does this do?
 
 int x = 0;
 int y = 0;
 do {
     x++;
+    y+=x;
+} while (x < 5);
+System.out.println(y);
+
+////////////////////////////
+
+How does this behave differently?
+
+
+int x = 0;
+int y = 0;
+do {
+    x++;
+
+    //added this if-statement
     if (x == 1) {
         break;
     }
+
     y+=x;
 } while (x < 5);
 System.out.println(y);
 
+break leaves the loop
 
 ///////////////////////////
 
-continue - moves to the next iteration as long
-    as condition is still true
+How does this behave differently?
 
-
-//What does this do?
 
 int x = 0;
 int y = 0;
 do {
     x++;
+
+    //added this if-statement
     if (x == 1) {
         continue;
     }
+
     y+=x;
 } while (x < 5);
 System.out.println(y);
+
+continue skips the rest of the iteration
+this will add numbers 2-5, skipping 1
 
 
 ////////////////////////////
@@ -101,17 +158,18 @@ Random numbers.
 
 import?
 
+import java.util.*;
 
 
 create random number generator?
 
-
+Random r = new Random();
 
 
 
 generate random number 0-4?
 
-
+int val = r.nextInt(5);
 
 
 
@@ -119,5 +177,9 @@ generate random number 0-4?
 
 Look at lab. 
 - rolling a dice?
+
+int dice = r.nextInt(6)+1;
+
 - making it pause before dice rolls?
+
 
