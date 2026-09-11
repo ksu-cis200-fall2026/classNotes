@@ -1,0 +1,64 @@
+Tutorial 3 due yesterday
+Lab today
+Exam 1: Thursday, September 17 during lab time
+No project this week
+
+--> next week will have a normal structure
+(background reading, tutorial, 2 labs, project)
+
+/////////////////////////
+
+Exam 1:
+- mix of multiple choice and open-ended
+- closed notes/computers, written exam 
+
+Topics:
+- structure of a Java program file
+- printing
+- variables and operations
+- user input (String, int, double)
+- conditional statements
+- loops (including nested loops)
+- analyzing code
+
+See practice exam.
+
+
+////////////////////
+
+Nested loops.
+
+some outer loop {
+    some inner loop {
+
+    }
+}
+
+
+What order do things happen?
+
+/////////////////////
+
+Example, print this pattern:
+
+5
+4 5
+3 4 5
+2 3 4 5
+1 2 3 4 5
+
+what's different on each? 
+
+
+
+/////////////////////
+
+Example: make a repeatable dice game with a max score
+
+(this would be good practice)
+
+/////////////////////
+
+Lab.
+
+How to make sure you start printing an odd number?
