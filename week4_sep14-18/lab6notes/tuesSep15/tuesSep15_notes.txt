@@ -8,24 +8,6 @@ No project this week
 
 /////////////////////////
 
-Exam 1:
-- mix of multiple choice and open-ended
-- closed notes/computers, written exam 
-
-Topics:
-- structure of a Java program file
-- printing
-- variables and operations
-- user input (String, int, double)
-- conditional statements
-- loops (including nested loops)
-- analyzing code
-
-See practice exam.
-
-
-////////////////////
-
 Nested loops.
 
 some outer loop {
@@ -58,6 +40,29 @@ Example: make a repeatable dice game with a max score
 (this would be good practice)
 
 /////////////////////
+
+Exam 1:
+- mix of multiple choice and open-ended
+- closed notes/computers, written exam 
+
+Topics:
+- structure of a Java program file
+- printing
+- variables and operations
+- user input (String, int, double)
+- conditional statements
+- loops (including nested loops)
+- analyzing code
+
+See practice exam.
+
+** Be prepared to analyze a given program
+    - trace through the code
+    - find errors
+    - determine good test cases
+
+
+////////////////////
 
 Lab.
 
