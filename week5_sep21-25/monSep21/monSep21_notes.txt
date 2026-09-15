@@ -1,0 +1,71 @@
+Tutorial 4 due today
+Two labs this week (today/Wednesday)
+
+Project 4 due Friday, September 25
+
+/////////////////////////
+
+High: ??/50 
+Average: ??/50
+
+A (45-50): ?? students
+B (40-44): ?? students
+C (35-39): ?? students
+D (30-34): ?? students
+F (below 30): ?? students
+
+
+If you didn't do as well as you wanted?
+
+discuss some Exam 1 problems
+
+/////////////////////////
+
+Arrays.
+
+Create an int array that holds the values 2,4,6,8,10
+
+
+How to print it?
+
+
+
+
+//////////////////////////
+
+int x = 4;
+int y = 7;
+x = y;
+x++;
+
+What values do both variables have?
+
+
+//////////////////////////
+
+int[] arr = new int[5];
+int[] copy = arr;
+
+
+//can we do this?
+copy[0] = 7;
+
+
+What values are in both arrays now?
+
+
+//////////////////////////
+
+Example.
+
+Get 6 numbers from the user, all in a line
+
+Print the reverse of the array
+
+//////////////////////////
+
+Lab 7 - see instructions.
+
+How to get user input?
+
+

@@ -1,0 +1,86 @@
+1) Example: num = 18
+
+Prints "18 = "
+
+Before loop:
+origNum = 18
+prime = true
+factor = 2
+mostFactor = 0
+mostCount = 1
+curCount = 0
+
+Check loop condition: factor <= num (2 <= 18) is true
+    Check if condition: num % factor (18 % 2) == 0 is true
+        Print factor (2)
+        prime = false
+        num /= factor makes num = 9
+
+        num is not 1, so print *
+        curCount++ makes curCount = 1
+
+Check loop condition: factor <= num (2 <= 9) is true
+    Check if condition: num % factor (9 % 2) == 0 is false, so enter else
+    Check inner if condition: curCount > mostCount (1 >= 0) is true
+        mostFactor = factor (2)
+        mostCount = curCount (1)
+    curCount = 0
+    factor++ makes factor = 3
+
+ Check loop condition: factor <= num (3 <= 9) is true
+    Check if condition: num % factor (9 % 3) == 0 is true
+        Print factor (3)
+        prime = false
+        num /= factor makes num = 3
+
+        num is not 1, so print *
+        curCount++ makes curCount = 1   
+
+ Check loop condition: factor <= num (3 <= 3) is true
+    Check if condition: num % factor (3 % 3) == 0 is true
+        Print factor (3)
+        prime = false
+        num /= factor makes num = 1
+
+        num is 1, so don't print *
+        curCount++ makes curCount = 2   
+
+ Check loop condition: factor <= num (3 <= 1) is false, so exit loop
+
+Check if condition: curCount > mostCount (2 > 1) is true
+    mostFactor = factor (3)
+    mostCount = curCount (2)
+
+Prime is false, so enters else:
+    Prints newlines
+    Prints most common factor of origNum (18) is mostFactor (3), which occurred curCount (2) times
+
+
+2) Good test cases (plus show output on those cases):
+    a) Negative or 0 - should print an error instead of trying to factor
+        Enter -4, prints: 
+            Error: input must be positive
+
+    b) A prime number (like 7)
+        Enter 7, prints:
+            7 = 7
+            7 is prime
+
+    c) An edge case (like 1) - should print that 1 is not prime or composite
+        Enter 1, prints:
+            1 is neither prime nor composite
+
+    d) A number with just one factor (like 64)
+        Enter 64, prints:
+            64 = 2 * 2 * 2 * 2 * 2 * 2
+            Most common factor of 64 is 2, which occurred 6 times
+
+    e) A number with all unique factors (like 30)
+        Enter 30, prints:
+            30 = 2 * 3 * 5
+            Most common factor of 30 is 2, which occurred 1 time
+
+
+3) An error and how to fix it (could be anything):
+Error: the most frequent factor was incorrect in cases where the most frequent factor was also the last factor
+Fix: added a last check after the loop to see if the most recent factor was also the most frequent
