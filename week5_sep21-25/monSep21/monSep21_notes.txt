@@ -25,8 +25,23 @@ Arrays.
 
 Create an int array that holds the values 2,4,6,8,10
 
+int[] nums = new int[5];
+nums[0]= 2;
+nums[1]= 4;
+nums[2]= 6;
+nums[3]= 8;
+nums[4]= 10;
+
+OR:
+for (int i = 0; i < nums.length; i++) {
+    nums[i] = 2*(i+1);
+}
+
+OR: 
+int[] nums = {2,4,6,8,10};
 
 How to print it?
+
 
 
 
