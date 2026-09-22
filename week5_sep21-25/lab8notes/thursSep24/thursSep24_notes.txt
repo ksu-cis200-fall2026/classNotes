@@ -1,0 +1,67 @@
+Project 4 due Friday
+
+Reminder: how to find office hours
+
+/////////////////////////////
+
+Project 4 discussion.
+
+Calculating dates
+
+    //assuming "start" is the user input for the starting date
+    //like "12/28/25"
+    String[] pieces = start.split("/");
+    int[] startDate = new int[pieces.length];
+    for(int i = 0; i < pieces.length; i++) {
+        startDate[i] = Integer.parseInt(pieces[i]);
+    }
+
+    What is in startDate now?
+
+
+///////////////
+
+int[] days = {31,28,31,30,31,30,31,31,30,31,30,31};
+
+
+Store dates in array (recommend string array)
+    how big?
+
+
+
+month = ?
+day = ?
+year = ?
+
+
+Now create dates array:
+
+
+Temperature arrays?
+
+/////////////////////////////
+
+Two-dimensional arrays (Grid.java).
+
+
+
+
+///////////////////////////
+
+Lab. 
+
+1) Create a 2D array with values 1, 2, ... that can be "read" 
+like a book
+
+2) repeatedly left-shift each row until user wants to stop
+
+
+How to left-shift?
+    {1,2,3,4} becomes?
+    (in general) update each position to be...?
+
+What kind of loops are needed?
+
+
+Reminder: switching between types of input
+
