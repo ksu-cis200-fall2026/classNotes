@@ -25,6 +25,18 @@ Arrays.
 
 Create an int array that holds the values 2,4,6,8,10
 
+int[] nums = new int[5];
+nums[0] = 2;
+nums[1] = 4;
+nums[2] = 6;
+nums[3] = 8;
+nums[4] = 10;
+
+OR:
+
+for (int i = 0; i < nums.length; i++) {
+    nums[i] = 2*(i+1);
+}
 
 How to print it?
 
@@ -58,14 +70,16 @@ What values are in both arrays now?
 
 Example.
 
-Get 6 numbers from the user, all in a line
+Get 6 ages from the user, all in a line
 
-Print the reverse of the array
+Enter ages: 15 20 30 7 100 0 
+
+Print the ages that are teenagers
 
 //////////////////////////
 
 Lab 7 - see instructions.
 
-How to get user input?
+Algorithm.
 
 
