@@ -1,22 +1,21 @@
 Project 4 due Friday
 
-Reminder: how to find office hours
 
-/////////////////////////////
+How to store temp values?
+    high temp array
+    low temp array
 
-Project 4 discussion.
 
 Calculating dates
 
-    //assuming "start" is the user input for the starting date
-    //like "12/28/25"
+    //assume "start" is: "12/28/25";
     String[] pieces = start.split("/");
     int[] startDate = new int[pieces.length];
     for(int i = 0; i < pieces.length; i++) {
         startDate[i] = Integer.parseInt(pieces[i]);
     }
 
-    What is in startDate now?
+    What is in startDate now? {12, 28, 25}
 
 
 ///////////////
@@ -28,16 +27,37 @@ Store dates in array (recommend string array)
     how big?
 
 
+What is in startDate now? {12, 28, 25}
 
-month = ?
-day = ?
-year = ?
+month = startDate[0];
+day = startDate[1];
+year = startDate[2];
 
 
 Now create dates array:
+    make a String array whose size is the timespan
+
+use a for loop to step through each value in dates array
+    make a date out of month + "/" day/year
+    put it in the array
+
+    change month/day/year to be tomorrow
+
+    are we on the last day of year?
+        (month is 12, day is 31)
+        month = 1
+        day = 1
+        year++
+    are we on the last day of a month?
+        (day == days[month])
+        month++
+        day = 1
+    otherwise (we're in the middle of a month):
+        day++
 
 
-Temperature arrays?
+
+
 
 /////////////////////////////
 
@@ -62,6 +82,20 @@ How to left-shift?
 
 What kind of loops are needed?
 
+outer loop: do-while menu loop that goes until they want to quit
+    do a left shift
+
+    loop through each row (i)
+        save out the first value on that row
+        temp = grid[i][0]
+        loop through each column (j) but only while < cols-1
+            set each element to the one right of it (see board)
+        update last element to be our saved first
+
+
 
 Reminder: switching between types of input
+
+after reading s.nextInt():
+    s.nextLine();
 
