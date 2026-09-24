@@ -2,6 +2,28 @@ import java.util.*;
 
 public class Grid {
     public static void main(String[] args) {
+        double[][] grid = new double[7][3];
+
+        //outer loop through rows
+            //inner loop through columns
+
+        //grid.length is #rows
+        for (int i = 0; i < grid.length; i++) {
+            double cur = i+1;
+            for (int j = 0; j < grid[i].length; j++) {
+                grid[i][j] = cur;
+                cur+=0.1;
+            }
+        }
+
+        //loop to print
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                System.out.printf("%.2f ", grid[i][j]);
+            }
+            System.out.println();
+        }
+
         /*
             Create a 7x3 array of doubles.
 

@@ -1,22 +1,23 @@
 Project 4 due Friday
 
-Reminder: how to find office hours
 
-/////////////////////////////
+How to store temp values?
 
-Project 4 discussion.
+array for low temps
+array for high temps
+
+
 
 Calculating dates
 
-    //assuming "start" is the user input for the starting date
-    //like "12/28/25"
+    //assume "start" is: "12/28/25";
     String[] pieces = start.split("/");
     int[] startDate = new int[pieces.length];
     for(int i = 0; i < pieces.length; i++) {
         startDate[i] = Integer.parseInt(pieces[i]);
     }
 
-    What is in startDate now?
+    What is in startDate now? 
 
 
 ///////////////
@@ -28,16 +29,33 @@ Store dates in array (recommend string array)
     how big?
 
 
+What is in startDate now? 
 
-month = ?
-day = ?
-year = ?
+month = startDate[0]
+day = startDate[1]
+year = startDate[2]
 
 
 Now create dates array:
 
+create String array to hold the dates (same size as the timespan)
+loop through each date to generate
+    create date month/day/year, put in array
+    now generate tomorrow's date
+        are we at the end of the year?
+        (is month 12 and day 31?)
+            month = 1
+            day = 1
+            year++
+        are we at the end of a month?
+            (is days[month-1] == day)
+            day = 1
+            month++
+        otherwise:
+            day++
 
-Temperature arrays?
+
+
 
 /////////////////////////////
 
@@ -50,10 +68,10 @@ Two-dimensional arrays (Grid.java).
 
 Lab. 
 
-1) Create a 2D array with values 1, 2, ... that can be "read" 
-like a book
+1) Create a 2D array with values 1, 2, ... that can be 
+"read" like a book
 
-2) repeatedly left-shift each row until user wants to stop
+2) left-shift each row until user wants to stop
 
 
 How to left-shift?
@@ -62,6 +80,17 @@ How to left-shift?
 
 What kind of loops are needed?
 
+outer loop: menu loop while they want to keep going
+    want to do a left shift
+    loop through each row (i)
+        oldFront = grid[i][0]
+        loop through each column (j) (while < cols-1)
+            replace grid[i][j] with one next to it (grid[i][j+1])
+        update last element in row:
+            grid[i][cols-1] = oldFront
+
 
 Reminder: switching between types of input
+
+
 
