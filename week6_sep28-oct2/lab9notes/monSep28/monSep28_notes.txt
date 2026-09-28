@@ -1,0 +1,124 @@
+Tutorial 5 due today
+
+2 labs this week
+
+Project 5 due Friday, October 2
+    (this one is a little bigger -- start early!)
+
+//////////////////////////
+
+Strings. 
+
+String first = "hello";
+
+How to print all the characters in first, one per line?
+
+
+
+
+///////////////////////////////////
+
+What is this doing?
+
+String first = "hello";
+String second = "goodbye";
+for (int i = 0; i < second.length(); i++) {
+    first += second.charAt(i);
+}
+
+first will be: ?
+
+
+
+...is there a more efficient way? 
+
+String first = "hello";
+String second = "goodbye";
+
+
+
+/////////////////////////
+
+String example = "september";
+
+
+--> How to get just the "ept"?
+
+
+--> How to get just the "er"?
+
+
+
+--> How to get just the "s"?
+
+
+/////////////////////////
+
+String split.
+
+String big = "This is a sentence.";
+
+
+--> How to print the individual words?
+
+
+--> What if there are multiple spaces in a row?
+
+
+
+
+Instead, do:
+
+
+
+
+
+
+How to use a for-each loop to print each? 
+
+
+
+
+In general:
+
+
+
+
+/////////////////////////
+
+File example - Copier.java
+
+////////////////////////
+
+Project 5 - Wordle.
+
+What do the input files mean?
+
+puzzles.txt - list of possible puzzle words
+allowed.txt - list of allowed guesses
+
+get a puzzle word 
+
+either user picks or pick a random one
+
+
+What do the colors mean?
+
+correct: raise
+guess: scare
+
+feedback: 
+
+G (green):
+Y (yellow): 
+B (black): 
+
+
+What to do first?
+
+
+
+
+///////////////////////
+
+Lab 9
