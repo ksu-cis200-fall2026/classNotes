@@ -3,20 +3,11 @@ Tutorial 5 due yesterday
 2 labs this week
 
 Project 5 due Friday, October 2
-    (this one is a little bigger -- start early!)
 
 //////////////////////////
 
 Strings. 
 
-String first = "hello";
-
-How to print all the characters in first, one per line?
-
-
-
-
-///////////////////////////////////
 
 What is this doing?
 
@@ -26,15 +17,23 @@ for (int i = 0; i < second.length(); i++) {
     first += second.charAt(i);
 }
 
-first will be: ?
+first will be: hellogoodbye
 
 
 
-...is there a more efficient way? 
+...is there a more efficient way?  StringBuilder
 
 String first = "hello";
 String second = "goodbye";
 
+StringBuilder build = new StringBuilder(first);
+//StringBuilder empty = new StringBuilder();
+
+for (int i = 0; i < second.length(); i++) {
+    build.append(second.substring(i,i+1));
+}
+
+first = build.toString();
 
 
 /////////////////////////
@@ -57,29 +56,25 @@ String example = "september";
 String split.
 
 String big = "This is a sentence.";
+String[] pieces = big.split(" ");
 
 
 --> How to print the individual words?
 
+for (int i = 0; i < pieces.length; i++) {
+    System.out.println(pieces[i]);
+}
+
 
 --> What if there are multiple spaces in a row?
 
-
+String big = "This  is  a sentence.";
+String[] pieces = big.split("\\s+");
 
 
 Instead, do:
 
 
-
-
-
-
-How to use a for-each loop to print each? 
-
-
-
-
-In general:
 
 
 
@@ -97,6 +92,9 @@ What do the input files mean?
 puzzles.txt - list of possible puzzle words
 allowed.txt - list of allowed guesses
 
+array of puzzle words
+array of allowed words
+
 get a puzzle word 
 
 either user picks or pick a random one
@@ -107,11 +105,11 @@ What do the colors mean?
 correct: raise
 guess: scare
 
-feedback: 
+feedback: YBYYG
 
-G (green):
-Y (yellow): 
-B (black): 
+G (green): right letter, right spot
+Y (yellow): right letter, wrong spot
+B (black): wrong letter
 
 
 What to do first?
@@ -122,3 +120,12 @@ What to do first?
 ///////////////////////
 
 Lab 9
+
+while more lines in file
+    read a name
+    split the name apart to get an array
+    if array length is 1:
+
+    if array length is 2:
+
+    ...
