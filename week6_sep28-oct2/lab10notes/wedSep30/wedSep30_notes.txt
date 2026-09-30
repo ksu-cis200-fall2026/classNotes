@@ -1,16 +1,49 @@
+Reminder: enrollment worksheet before advising appt.
+
+
+
 Project 5 due Friday
 
 Guesses with duplicate letters.
 
 correct: "enemy"
 guess: "geese"
-feedback: 
+feedback: BYGBB
 
 correct: "glove"
 guess: "ledge"
-feedback: 
+feedback: YBBYG
+
+
 
 Algorithm:
+
+used array: booleans (same size as the word)
+feedback array: characters (same size as the word)
+
+
+initially: used is all false, feedback is empty
+
+
+green feedback: 
+    do first, mark "G" in feedback array for any
+    guess letter in the correct spot.
+
+    mark the same position in used to be true.
+
+
+yellow/black feedback:
+    loop over guess letters (i)
+        if feedback[i] is G, continue (that letter is already done)
+        loop over correct letters (j)
+            if guess[i] == correct[j] AND used[j] is still false:
+                feedback[i] = Y 
+                used[j] = true
+        if never found a match (feedback[i] isn't a Y):
+            feedback[i] = B
+
+
+used/feedback get recreated with each guess
 
 
 /////////////////////
@@ -25,11 +58,13 @@ How to tell if s1 and s2 have the same characters?
 
 if (s1 == s2) {
     //what does this do?
-
+    compares their memory addresses
 }
 
 
 How to compare characters?
+
+if (s1.equals(s2))
 
 
 
@@ -41,15 +76,15 @@ indexOf.
 
 String test = "explanation";
 
-int index1 = test.indexOf("ana"); //index1 is ?
+int index1 = test.indexOf("ana"); //index1 is 4
 
-int index2 = test.indexOf("one"); //index2 is ?
+int index2 = test.indexOf("one"); //index2 is -1
 
-int index3 = test.indexOf("a", 5); //index3 is ?
+int index3 = test.indexOf("a", 5); //index3 is 6
 
 //////////////////////
 
-Numbers.java example.
+Numbers.java example. (would you like an example?)
 
 
 Get sum of comma-separated number list, like: 
@@ -77,6 +112,16 @@ Lab 10 - see penguin.html file
 <script src="js/main.js"></script>
 
 Goal: create an output file with the name of all image files (the src of an img element)
+
+read each line
+    see if the current line contains "<img"
+        (use indexOf, see if it's not -1)
+        if it does, now look for "src=" on the same line
+            look for a "
+            start = indexOf("\"", from where I found src)
+            look for another "
+            stop = index("\"", from where I found previous ")
+            use substring to grab what's in between start and stop
 
 
 
