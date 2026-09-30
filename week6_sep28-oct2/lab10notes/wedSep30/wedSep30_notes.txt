@@ -118,9 +118,9 @@ read each line
         (use indexOf, see if it's not -1)
         if it does, now look for "src=" on the same line
             look for a "
-            start = indexOf("\"", from where I found src)
+            start = line.indexOf("\"", from where I found src)
             look for another "
-            stop = index("\"", from where I found previous ")
+            stop = line.index("\"", from where I found previous ")
             use substring to grab what's in between start and stop
 
 

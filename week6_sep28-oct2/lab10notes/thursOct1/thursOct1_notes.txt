@@ -1,3 +1,7 @@
+Reminder: enrollment worksheet before advising appt.
+
+
+
 Project 5 due Friday
 
 Guesses with duplicate letters.
@@ -10,7 +14,23 @@ correct: "glove"
 guess: "ledge"
 feedback: 
 
+
+
 Algorithm:
+
+used array:
+feedback array:
+
+
+initially:
+
+
+green feedback:
+
+
+yellow/black feedback:
+
+
 
 
 /////////////////////
@@ -49,7 +69,7 @@ int index3 = test.indexOf("a", 5); //index3 is ?
 
 //////////////////////
 
-Numbers.java example.
+Numbers.java example. (would you like an example?)
 
 
 Get sum of comma-separated number list, like: 
