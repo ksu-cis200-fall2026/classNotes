@@ -1,0 +1,86 @@
+Project 5 due Friday
+
+Guesses with duplicate letters.
+
+correct: "enemy"
+guess: "geese"
+feedback: 
+
+correct: "glove"
+guess: "ledge"
+feedback: 
+
+Algorithm:
+
+
+/////////////////////
+
+String comparison.
+
+String s1 = (some user input);
+String s2 = (some user input);
+
+
+How to tell if s1 and s2 have the same characters?
+
+if (s1 == s2) {
+    //what does this do?
+
+}
+
+
+How to compare characters?
+
+
+
+
+
+/////////////////////
+
+indexOf.
+
+String test = "explanation";
+
+int index1 = test.indexOf("ana"); //index1 is ?
+
+int index2 = test.indexOf("one"); //index2 is ?
+
+int index3 = test.indexOf("a", 5); //index3 is ?
+
+//////////////////////
+
+Numbers.java example.
+
+
+Get sum of comma-separated number list, like: 
+12,4,-3.2,5
+
+
+With split?
+
+WITHOUT split?
+
+//////////////////////
+
+String sample = "stuff before <p>This is a paragraph element in HTML</p> stuff after";
+
+
+How to get what is between the <p> and </p> tags?
+
+
+//////////////////////
+
+Lab 10 - see penguin.html file
+
+<img src="emperor_penguin.jpg" alt="Emperor Penguin standing on ice">
+<img alt="Adélie Penguin in the snow" src="adelie_penguin.jpg" height="100" width="200">
+<script src="js/main.js"></script>
+
+Goal: create an output file with the name of all image files (the src of an img element)
+
+
+
+
+    
+
+
