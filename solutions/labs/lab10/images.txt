@@ -1,0 +1,5 @@
+penguin_swimming.jpg
+emperor_penguin.jpg
+adelie_penguin.png
+penguin_colony.jpg
+baby_penguin.png
