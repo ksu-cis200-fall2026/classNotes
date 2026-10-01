@@ -8,27 +8,43 @@ Guesses with duplicate letters.
 
 correct: "enemy"
 guess: "geese"
-feedback: 
+feedback: BYGBB
 
 correct: "glove"
 guess: "ledge"
-feedback: 
+feedback: YBBYG
 
 
 
 Algorithm:
 
-used array:
-feedback array:
+used array: which letters in the correct word have been "matched"
+feedback array: G/Y/B for each guess letter
 
 
-initially:
+initially (before we look at the guess):
+    used should be all false
+    feedback should be ?
 
 
-green feedback:
+first: fill G values (how? what should we do with used)
+    find ones that match same position in correct
+    mark that same position in used to true
 
 
-yellow/black feedback:
+
+next: fill Y/B values 
+
+    loop over each guess letter (i)
+        found = false
+        loop over each correct letter (j)
+            if guess[i] == correct[j] AND used[j] == false
+                feedback[i] = Y 
+                used[j] = true
+                found = true
+
+        if found is still false?
+            feedback[i] = B
 
 
 
@@ -45,11 +61,13 @@ How to tell if s1 and s2 have the same characters?
 
 if (s1 == s2) {
     //what does this do?
-
+    compares the memory addresses
 }
 
 
 How to compare characters?
+
+if (s1.equals(s2))
 
 
 
@@ -61,11 +79,11 @@ indexOf.
 
 String test = "explanation";
 
-int index1 = test.indexOf("ana"); //index1 is ?
+int index1 = test.indexOf("ana"); //index1 is 4
 
-int index2 = test.indexOf("one"); //index2 is ?
+int index2 = test.indexOf("one"); //index2 is -1
 
-int index3 = test.indexOf("a", 5); //index3 is ?
+int index3 = test.indexOf("a", 5); //index3 is 6
 
 //////////////////////
 
@@ -76,9 +94,7 @@ Get sum of comma-separated number list, like:
 12,4,-3.2,5
 
 
-With split?
-
-WITHOUT split?
+Try without using split.
 
 //////////////////////
 
@@ -98,6 +114,13 @@ Lab 10 - see penguin.html file
 
 Goal: create an output file with the name of all image files (the src of an img element)
 
+reading each line in the file
+    does the current line have "<img"?
+    (see if line.indexOf("<img") isn't -1)
+        source = line.indexOf("src=")
+        start = line.indexOf("\"", source)
+        similarly find end " after start
+        use substring to get the image file name
 
 
 

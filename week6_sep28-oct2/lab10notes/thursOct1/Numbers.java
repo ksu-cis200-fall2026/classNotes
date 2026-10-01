@@ -8,10 +8,28 @@ public class Numbers {
         String line = s.nextLine();
 
         //like: 12,4,-3.2,5
+        int start = 0;
+        int index = 0;
+        double sum = 0;
+        do {
+            index = line.indexOf(",", start);
+            double num;
+            if (index == -1) {
+                num = Double.parseDouble(line.substring(start));
+            }
+            else {
+                num = Double.parseDouble(line.substring(start,index));
+            }
+            sum += num;
+            start = index+1;
+        } while(index != -1);
 
-        //first use split
+        System.out.println("Sum is: " + sum);
+        
 
-        //then don't
+        //don't use split
+
+        //goal: print sum of numbers
 
     }
 }
