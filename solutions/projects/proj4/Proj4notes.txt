@@ -1,0 +1,29 @@
+1. Error condition test cases.
+    - Date: 11/31/25 (tests an out of bound day). Program prints that 31 is an invalid day and exits.
+    - Date: 13/22/25 (tests an out of bound month). Program prints that 13 is an invalid month and exits.
+    - Date: 1/1/-4 (tests an out of bound year). Program prints that -4 is an invalid year and exits.
+    - Time span: 0. Program prints that 0 is an invalid time span and exits.
+
+2. Date/time span test cases.
+    - Date: 12/25/25, time span: 7. (Tests a time span that ends at the end of a month).
+        Program outputs dates from 12/25/25 to 12/31/25.
+    - Date: 12/31/25, time span: 2. (Tests a time span that starts at the end of a year and ends at the 
+        beginning of a year). Program outputs dates from 12/31/25 to 1/1/26.
+    - Date: 2/27/24, time span: 34. (Tests a time span that includes the end of February in a leap year.)
+        Program outputs dates from 2/27/24 to 3/1/24 (which includes 2/29/24)
+
+3. Temperature swing test cases.
+    - Day 1: (high 45, low 22), Day 2: (high 37, low 12). Tests the edge case of just two dates.
+        Program outputs a 33 degree swing (45 to 12).
+    - Day 1: (high 42, low 17), Day 2: (high 50, low 40), Day 3: (high 55, low 32)
+        Tests the case where the swing is a low followed by a high.
+        Program outputs a 33 degree swing (17 to 50). 
+    - Day 1: (high 53, low 17), Day 2: (high 54, low 40), Day 3: (high 32, low 13), Day 4: (high 53, low 42)
+        Tests the case where the swing is a high followed by a low.
+        Program outputs a 41 degree swing (54 to 13)
+
+4. Error and fix.
+    Program initially printed the dates out of order for some temperature swings (i.e., it might have printed
+        that the biggest swing was from 10 degrees on 1/2/26 to 40 degrees on 1/1/26). This was fixed by comparing the
+        positions of the dates involved in the low/high portions of the swing and making sure to print the dates in ascending
+        order.
