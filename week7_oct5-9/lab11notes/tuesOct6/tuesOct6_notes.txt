@@ -1,5 +1,5 @@
-Tutorial 6 due today
-Labs today and Wednesday
+Tutorial 6 due yesterday
+Labs today and Thursday
 Project 6 due Tuesday, October 13** (delayed due to Wildcat Pause Day)
 
 (divide Wordle into methods)
