@@ -1,0 +1,88 @@
+Tutorial 6 due today
+Labs today and Thursday
+Project 6 due Friday, March 9
+
+(divide Wordle into methods)
+
+
+
+/////////////////////////////////////
+
+Why write separate methods?
+
+
+
+
+Syntax for declaring a method:
+
+public static returnType methodName(type paramName, ...)
+
+returnType = ?
+void = ?
+
+/////////////////////////////////////
+
+Methods.java - practice writing and calling methods
+
+////////////////////////////////////
+
+Value types vs reference types.
+
+value type: data itself is stored at that variable location in memory
+    examples? int, double, char, boolean
+
+    int x = 4;
+
+reference type: that variable location stores a memory address (a reference)
+    to some other information in memory
+
+    examples? String, array
+
+    int[] example = {1,2,3};
+
+////////////////////////////////////
+
+Call-by-value vs call-by-reference
+
+public static void zeroNum(int num) {
+    num = 0;
+}
+
+public static void zeroArray(int[] nums) {
+    for (int i = 0; i < nums.length; i++) {
+        nums[i] = 0;
+    }
+}
+
+int x = 4;
+zeroNum(x);
+
+int[] stuff = {1,2,3};
+zeroArray(stuff);
+
+
+
+
+/////////////////////////////////////
+
+Global variables.
+
+define inside the class but outside any method
+
+public static type name;
+
+public static int count;
+
+
+//////////////////////////////////////
+
+Constants.
+
+public static final int SIZE = 10;
+
+
+//////////////////////////////////////
+
+See lab 11.
+
+What should each method header look like?
