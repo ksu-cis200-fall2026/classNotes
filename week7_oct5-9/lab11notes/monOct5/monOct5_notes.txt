@@ -1,5 +1,6 @@
 Tutorial 6 due today
 Labs today and Wednesday
+Exam 2 is next Wednesday (October 14)
 Project 6 due Tuesday, October 13** (delayed due to Wildcat Pause Day)
 
 (divide Wordle into methods)
@@ -10,6 +11,9 @@ Project 6 due Tuesday, October 13** (delayed due to Wildcat Pause Day)
 
 Why write separate methods?
 
+- manageable chunks of information
+- repeated code 
+
 
 
 
@@ -17,8 +21,8 @@ Syntax for declaring a method:
 
 public static returnType methodName(type paramName, ...)
 
-returnType = ?
-void = ?
+returnType = what type the result is that it gives back
+void = no return
 
 /////////////////////////////////////
 
@@ -26,19 +30,24 @@ Methods.java - practice writing and calling methods
 
 ////////////////////////////////////
 
+Skipped rest until lab -- will do on Wed.
+
+////////////////////////////////////
+
 Value types vs reference types.
 
 value type: data itself is stored at that variable location in memory
-    examples? int, double, char, boolean
+    examples?
 
-    int x = 4;
 
-reference type: that variable location stores a memory address (a reference)
-    to some other information in memory
 
-    examples? String, array
 
-    int[] example = {1,2,3};
+reference type: that variable location stores a memory address 
+    (a reference) to some other information in memory
+
+    examples? 
+
+
 
 ////////////////////////////////////
 
@@ -86,3 +95,24 @@ public static final int SIZE = 10;
 See lab 11.
 
 What should each method header look like?
+
+//turns "1 2 3" into {1,2,3}
+public static int[] stringToArray(String str)
+    use split on str with " " as your delimeter
+    need to make an int[] - make array be size of split result
+    go through string pieces, turn into numbers
+    (look at project 4)
+
+//returns sum of an array
+public static int sumArray(int[] nums)
+
+
+//returns range of an array
+public static int rangeArray(int[] nums)
+
+
+Order:
+1) sumArray (similar to min/max)
+2) rangeArray
+3) stringToArray
+4) main
