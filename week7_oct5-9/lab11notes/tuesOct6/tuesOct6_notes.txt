@@ -5,20 +5,22 @@ Project 6 due Tuesday, October 13** (delayed due to Wildcat Pause Day)
 (divide Wordle into methods)
 
 
+Exam 2 is Thursday, October 15
 
 /////////////////////////////////////
 
 Why write separate methods?
 
-
+    much better to pull out repetitive
+    easier to read, better organized
 
 
 Syntax for declaring a method:
 
 public static returnType methodName(type paramName, ...)
 
-returnType = ?
-void = ?
+returnType = what it is giving back
+void = not giving back anything
 
 /////////////////////////////////////
 
@@ -26,63 +28,25 @@ Methods.java - practice writing and calling methods
 
 ////////////////////////////////////
 
-Value types vs reference types.
-
-value type: data itself is stored at that variable location in memory
-    examples? int, double, char, boolean
-
-    int x = 4;
-
-reference type: that variable location stores a memory address (a reference)
-    to some other information in memory
-
-    examples? String, array
-
-    int[] example = {1,2,3};
-
-////////////////////////////////////
-
-Call-by-value vs call-by-reference
-
-public static void zeroNum(int num) {
-    num = 0;
-}
-
-public static void zeroArray(int[] nums) {
-    for (int i = 0; i < nums.length; i++) {
-        nums[i] = 0;
-    }
-}
-
-int x = 4;
-zeroNum(x);
-
-int[] stuff = {1,2,3};
-zeroArray(stuff);
-
-
-
-
-/////////////////////////////////////
-
-Global variables.
-
-define inside the class but outside any method
-
-public static type name;
-
-public static int count;
-
-
-//////////////////////////////////////
-
-Constants.
-
-public static final int SIZE = 10;
-
-
-//////////////////////////////////////
-
 See lab 11.
 
 What should each method header look like?
+
+1) turn string of numbers like "1 2 3 4" into int array like {1,2,3,4}
+
+public static int[] stringToArray(String numbers)
+    (look at Project 4)
+
+2) takes array of ints, returns sum
+
+public static int sumArray(int[] array)
+
+3) takes array of ints, returns range
+
+public static int rangeArray(int[] array)
+
+tutorial with Stats.java with min/max of an array
+max-min is the range
+
+write these three methods FIRST
+then go back and write the main method
