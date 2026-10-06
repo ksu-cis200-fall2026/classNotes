@@ -1,0 +1,105 @@
+Project 6 due Tuesday, October 13
+Exam 2 is Wednesday, October 14
+
+///////////////////////////////
+
+Project 6 - Wordle into methods.
+
+- stats file
+
+number of games played
+number of games won
+
+don't assume stats file exists
+    File f = new File(name of stats file);
+    if (f.exists()) {
+        //means that the stats file DOES exists
+        //so we can read from it
+    }
+    else {
+        //never played before
+        //start stats at 0 games, 0 wins
+    }
+
+
+/////////////////////////
+
+Today:
+-Breaking project into methods
+
+--> look for code duplication
+--> identify chunks of code related to a single job, break them into
+    a different method
+
+/////////////////////////
+
+Hangman example
+
+/////////////////////////
+
+Value types vs reference types.
+
+value type: data itself is stored at that variable location in memory
+    examples?
+
+
+
+
+reference type: that variable location stores a memory address 
+    (a reference) to some other information in memory
+
+    examples? 
+
+
+
+////////////////////////////////////
+
+Call-by-value vs call-by-reference
+
+public static void zeroNum(int num) {
+    num = 0;
+}
+
+public static void zeroArray(int[] nums) {
+    for (int i = 0; i < nums.length; i++) {
+        nums[i] = 0;
+    }
+}
+
+int x = 4;
+zeroNum(x);
+
+int[] stuff = {1,2,3};
+zeroArray(stuff);
+
+
+
+
+/////////////////////////////////////
+
+Global variables.
+
+define inside the class but outside any method
+
+public static type name;
+
+public static int count;
+
+
+//////////////////////////////////////
+
+Constants.
+
+public static final int SIZE = 10;
+
+
+//////////////////////////////////////
+
+Lab 12 (Tic-Tac-Toe)
+- global Scanner for user input
+- createBoard: create array with '_'
+- printBoard: prints board to the screen
+- isFull: returns whether board is full
+- getRow: takes turn (char), gets and returns user row
+- getCol: takes turn (char), gets and returns user column
+- isWinner: takes board and turn, returns if player is winner
