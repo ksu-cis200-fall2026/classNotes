@@ -1,0 +1,32 @@
+1. Error condition test cases.
+    - User enters something other than y/n for cheat mode.
+        Program does nothing, and does not enter cheat mode.
+    - User enters an invalid puzzle word in cheat mode.
+        Program prints an error, uses a randomly generated puzzle word, and prints it out.
+    - User enters a guess that is not in either the puzzles or allowed file.
+        Program prints that the guess is invalid and does NOT count it as one of the 6 guesses.
+
+2. Feedback test cases.
+    - Correct word: apple, guess: paper. Feedback: YYGYB
+    - Correct word: paper, guess: apple. Feedback: YYGBY
+    - Correct word: sheen, guess: intel. Feedback: BYBGB
+    - Correct word: zebra, guess: quits. Feedback: BBBBB
+    - Correct word: zebra, guess: zebra. Feedback: GGGGG
+    - Correct word: steam, guess: mates. Feedback: YYYYY
+
+3. Different program tasks.
+    - Print initial game information
+    - Read in allowed words and puzzle words
+    - Pick a puzzle word, randomly either from user input (cheat mode)
+    - Repeat while the user hasn't made 6 valid guesses and hasn't guessed
+        the puzzle word yet:
+        - Let the user guess the puzzle
+        - See if their guess is valid
+        - If the guess is valid, print feedback for their guess
+    - Print end of game information:
+        - If they guessed the word within their 6 attempts, print that they won 
+        - Otherwise, print that they are out of guesses
+    
+
+4. Error and fix.
+    (describe an error and how they fixed it)
