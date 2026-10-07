@@ -68,6 +68,7 @@ public static void zeroArray(int[] nums) {
 
 int x = 4;
 zeroNum(x);
+System.out.println(x);
 
 int[] stuff = {1,2,3};
 zeroArray(stuff);
@@ -97,9 +98,32 @@ public static final int SIZE = 10;
 
 Lab 12 (Tic-Tac-Toe)
 - global Scanner for user input
-- createBoard: create array with '_'
-- printBoard: prints board to the screen
-- isFull: returns whether board is full
-- getRow: takes turn (char), gets and returns user row
-- getCol: takes turn (char), gets and returns user column
-- isWinner: takes board and turn, returns if player is winner
+- createBoard: create/return array filled with '_' characters
+
+public static char[][] createBoard()
+
+- printBoard: takes board, prints the current game configuration
+
+public static void printBoard(char[][] board)
+
+
+- isFull: takes board, returns whether the board is full
+
+public static boolean isFull(char[][] borad)
+
+
+- getRow: takes current (char) turn,
+    returns the user's row selection for that player
+
+public static int getRow(char turn)
+
+
+- getCol: (same idea as getRow)
+
+public static int getCol(char turn)
+
+
+- isWinner: takes board and turn as parameters,
+    returns whether that player won
+
+public static boolean isWinner(char[][] booard, char turn)
