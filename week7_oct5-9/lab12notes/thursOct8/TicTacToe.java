@@ -1,6 +1,26 @@
 import java.util.*;
 
 public class TicTacToe {
+    //global Scanner for user input
+
+    //createBoard: create/return array filled with '_' characters
+    //public static char[][] initializePuzzle()
+
+    //printBoard: takes board, prints the current game configuration
+    //public static void printPuzzle(char[][] puzzle)
+
+    //isFull: takes board, returns whether the board is full
+    //public static boolean isFull(char[][] board)
+
+    //getRow: takes current (char) turn, returns the user's row selection for that player
+    //public static int getRow(char turn)
+
+    //getCol: takes current (char) turn, returns the user's col selection for that player
+    //public static int getCol(char turn)
+
+    //isWinner: takes board and turn as parameters, returns whether that player won
+    //public static boolean isWinner(char[][] board, char turn)
+
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
@@ -41,6 +61,7 @@ public class TicTacToe {
         boolean winner = false;
 
         //9 potential moves
+        //this will become looping while the board isn't full
         int moves = 0;
         while (moves < 9) {
             System.out.println();
