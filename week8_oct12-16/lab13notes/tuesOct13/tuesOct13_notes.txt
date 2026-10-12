@@ -1,0 +1,67 @@
+Tutorial due yesterday
+Exam 2 is Wednesday, October 14
+Project 6 due today
+No new project this week
+
+///////////////////////////
+
+Exam 2 review
+- Closed notes/closed computers
+- Can use full time
+- Part multiple choice, part "open-ended"
+
+Topics:
+- Arrays (single dimension and 2D)
+- Strings
+- Text file IO
+- Methods
+
+
+///////////////////////////
+
+Work practice problems
+
+///////////////////////////
+
+Command-line arguments
+
+Example: Methods.java
+
+
+
+Command-line arguments with parentheses, commas:
+
+    java Lab13 "(1,2,3)" "(4,5,6)"
+
+////////////////////////////
+
+Writing methods in other classes.
+
+--> when do we include a main method? 
+
+--> how to call methods in another file?
+
+--> how to call methods in the SAME file?
+
+--> visibility modifiers
+
+////////////////////////////
+
+Lab 13.
+
+In Vector3:
+
+- magnitude (already written)
+    - takes a vector (array of doubles)
+    - returns the length of the vector (a double)
+- addVectors
+    - takes two vectors (as arrays of doubles)
+    - add/returns (new) sum of parameter vectors
+- printVector
+    - takes a vector (array of doubles)
+    - prints it in the format "(1.23, 4.56, 7.89)"
+- normalize
+    - takes a vector (as an array of doubles)
+    - MODIFIES the parameter vector to be normalized
+    (divide each parameter by the length)
+    (need to SAVE the original length before changing the vector)
