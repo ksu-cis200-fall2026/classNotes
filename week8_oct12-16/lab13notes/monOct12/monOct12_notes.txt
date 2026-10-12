@@ -1,6 +1,6 @@
 Tutorial due today
 Exam 2 is Wednesday, October 14
-Project 6 due Tuesday, October 13
+Project 6 due tomorrow
 No new project this week
 
 ///////////////////////////
@@ -38,12 +38,18 @@ Command-line arguments with parentheses, commas:
 Writing methods in other classes.
 
 --> when do we include a main method? 
+    just once, when we are ready to make an application that uses all our tools
 
 --> how to call methods in another file?
+    ClassName.methodName(...)
 
 --> how to call methods in the SAME file?
+    methodName(...)
+
 
 --> visibility modifiers
+
+
 
 ////////////////////////////
 
@@ -63,5 +69,8 @@ In Vector3:
 - normalize
     - takes a vector (as an array of doubles)
     - MODIFIES the parameter vector to be normalized
+    first thing: call magnitude, store its value
+    loop over your parameter array
+        update each value to divide by the magnitude
     (divide each parameter by the length)
     (need to SAVE the original length before changing the vector)
