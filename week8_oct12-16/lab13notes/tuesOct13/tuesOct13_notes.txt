@@ -1,5 +1,5 @@
 Tutorial due yesterday
-Exam 2 is Wednesday, October 14
+Exam 2 is Thursday, October 15
 Project 6 due today
 No new project this week
 
@@ -19,7 +19,7 @@ Topics:
 
 ///////////////////////////
 
-Work practice problems
+Work some practice problems
 
 ///////////////////////////
 
@@ -29,25 +29,44 @@ Example: Methods.java
 
 
 
-Command-line arguments with parentheses, commas:
-
-    java Lab13 "(1,2,3)" "(4,5,6)"
-
 ////////////////////////////
 
 Writing methods in other classes.
 
 --> when do we include a main method? 
+        only ONE main method per project
 
 --> how to call methods in another file?
+    FileName.methodName(parameters)
 
 --> how to call methods in the SAME file?
+    methodName(parameters) OR FileName.methodName(parameters)
+
 
 --> visibility modifiers
 
 ////////////////////////////
 
 Lab 13.
+
+vectors in 3D have an x-coordinate, y-coordinate, z-coordinate:
+    (x,y,z)
+
+Adding vectors:
+    (1,2,3) + (4,5,6) = (5,7,9)
+
+Vector magnitude (length):
+    magnitude of (x,y,z): sqrt(x^2 + y^2 + z^2)
+    magnitude of (1,2,3): sqrt(1 + 4 + 9) = sqrt(10)
+
+Normalize a vector:
+    UPDATE each coordinate so the length is 1
+    example: normalize (1,2,3)
+        magnitude of (1,2,3) = sqrt(1^2 + 2^2 + 3^2) = 4.12
+    now divide each coordinate by 4.12:
+        (1/4.12, 2/4.12, 3/4.12) = (0.24, 0.49, 0.73)
+    (0.24, 0.49, 0.73) is the normalized vector
+
 
 In Vector3:
 
@@ -65,3 +84,8 @@ In Vector3:
     - MODIFIES the parameter vector to be normalized
     (divide each parameter by the length)
     (need to SAVE the original length before changing the vector)
+
+
+Command-line arguments with parentheses, commas:
+
+    java Lab13 "(1,2,3)" "(4,5,6)"
