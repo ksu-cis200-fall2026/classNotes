@@ -1,0 +1,56 @@
+Exam 2 results
+
++2 to all scores
+
+High: 50/50 
+Average: 37/50
+
+A (45-50): 9 students
+B (40-44): 8 students
+C (35-39): 5 students
+D (30-34): 2 students
+F (below 30): 8 students
+
+Discuss Exam 2
+
+////////////////////////
+
+////////////////////////
+
+Tutorial due yesterday
+Labs today and Thursday
+Project 7 due Friday, October 23
+
+
+////////////////////////
+
+Procedural programming
+
+Object-oriented programming
+
+/////////////////////////
+
+Why define general classes?
+
+Parts of a general class?
+
+1) Fields 
+
+2) Constructor 
+
+3) Methods to do operations
+
+
+////////////////////////
+
+Example: complete the Circle class
+
+Create objects, call methods
+
+////////////////////////
+
+Example: *start* the Fraction class
+
+////////////////////////
+
+Lab 14
