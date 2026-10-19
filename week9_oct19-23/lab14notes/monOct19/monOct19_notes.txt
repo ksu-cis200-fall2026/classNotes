@@ -32,9 +32,10 @@ Why define general classes?
 
 Parts of a general class?
 
-1) Fields 
+1) Fields - variables that pertain to the class
 
-2) Constructor 
+2) Constructor - called when I create a new variable
+    of this type (initialize all fields)
 
 3) Methods to do operations
 
