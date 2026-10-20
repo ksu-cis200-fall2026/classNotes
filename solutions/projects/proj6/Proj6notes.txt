@@ -1,0 +1,36 @@
+1. Error condition test cases.
+- User enters 'r' in the menu loop. Program prints "invalid menu option".
+- (repeated from Proj5) User enters an invalid puzzle word in cheat mode.
+    Program prints that the word is not valid, and displays a random puzzle
+    word instead.
+- (repeated from Proj5) User enters an invalid guess. Program prints that
+    the guess is not a valid word, and does not count the guess towards the 
+    6 allowable guesses.
+
+2. Testing explanation.
+- First, I tested the Proj5 functionality by trying to run a single Wordle game.
+There, I tried both cheat mode with a valid word, cheat mode with an invalid word,
+non-cheat mode, valid guesses, invalid guesses, solving the puzzle within 6 guesses,
+not solving the puzzle within 6 guesses, and entering an invalid cheat mode option.
+- Next, I tested the game loop functionality by selecting multiple games in a row
+(and making sure new words were selected each time), entering invalid menu options,
+and quitting.
+- Finally, I tested the game statistics. First, I ensured the program correctly
+created a new statistics file when one didn't already exist. Next, I ensured
+the program updated the game/win numbers while the program was running by 
+accessing the statistics menu option after multiple games. Lastly, I tried quitting
+the program, rerunning it, and accessing the statistics to ensure the previous
+statistics were read in properly. I did one more test of playing additional games,
+checking the statistics (to ensure the new game/win record was added onto the
+old record), quitting, and starting again (to check that the loaded statistics
+included ALL previous runs of the program).
+
+3. Maintainability.
+The code in Proj5 was all in a (very long) main method, while the code in Proj6
+is broken into distinct sections that each accomplish a different job. It would
+be much easier for me to isolate problems and update functionality in Proj6
+than it would be in Proj5 because it would only require focusing on a single
+(short) piece at a time instead of the entire program.
+
+4. Error and fix.
+(Describe an error and how they fixed it)
