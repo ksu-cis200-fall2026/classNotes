@@ -1,0 +1,1 @@
+//redo circle operations with static

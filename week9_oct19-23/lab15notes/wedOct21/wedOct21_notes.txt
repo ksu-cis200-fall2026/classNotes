@@ -1,0 +1,41 @@
+Project 7 due Friday
+
+Game class setup.
+
+Reading the input file.
+
+Doing the search.
+
+///////////////////////////////////
+
+Look at Circle example.
+    --> add "getter" methods
+
+
+static keyword.
+
+Redo Circle example to use static 
+
+static variables (revisit 3.14)
+
+///////////////////////////////////
+
+"this" keyword
+
+////////////////////////////////////
+
+Arrays of objects
+
+null keyword
+
+///////////////////////////////////
+
+Object class
+
+toString method
+
+Add toString to Circle
+
+////////////////////////////////////
+
+Look at Lab 15 starter code
