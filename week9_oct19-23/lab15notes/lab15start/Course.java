@@ -11,10 +11,6 @@ public class Course {
 		//YOU DO THIS
 		//Create a Student object representing the parameter information
 		//Add the Student to your roster array
-		
-		Student s = new Student(name, major, gpa);
-		roster[size] = s;
-		size++;
 
 		//If the array is full, do nothing (don't add the student)
 	}
