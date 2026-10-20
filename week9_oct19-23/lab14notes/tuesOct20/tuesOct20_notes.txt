@@ -15,8 +15,6 @@ Discuss Exam 2
 
 ////////////////////////
 
-////////////////////////
-
 Tutorial due yesterday
 Labs today and Thursday
 Project 7 due Friday, October 23
@@ -30,16 +28,17 @@ Object-oriented programming
 
 /////////////////////////
 
-Why define general classes?
-
 Parts of a general class?
 
-1) Fields 
+1) Fields - variables for the class
+    - piece of information relevant to our new type
 
-2) Constructor 
+2) Constructor - construct a new one of these types
+    (creating an object of this type)
+    initializes the fields
 
 3) Methods to do operations
-
+    
 
 ////////////////////////
 
