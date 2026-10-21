@@ -1,10 +1,18 @@
 Project 7 due Friday
 
-Game class setup.
-
 Reading the input file.
 
-Doing the search.
+read # games
+make array that size
+loop to reach each game
+    read name
+    read year
+    make a StringBuilder to hold all the platforms
+    loop (while or do-while) to read each platform,
+        look for a blank line to know when you're done
+        append each platform with "," to your StringBuilder
+    afterwards, split the StringBuilder use "," as delimeter
+        will give you String[] that's the right size
 
 ///////////////////////////////////
 
@@ -20,13 +28,9 @@ static variables (revisit 3.14)
 
 ///////////////////////////////////
 
-"this" keyword
-
-////////////////////////////////////
-
 Arrays of objects
 
-null keyword
+
 
 ///////////////////////////////////
 
