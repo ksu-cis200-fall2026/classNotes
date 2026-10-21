@@ -5,11 +5,6 @@ public class Student {
 	
 	//YOU DO THIS
 	//Write a constructor that takes information for each field and initializes them
-	public Student(String n, String m, double g) {
-		name = n;
-		major = m;
-		gpa = g;
-	}
 
 	//YOU DO THIS
 	//Write "getter" methods for each field

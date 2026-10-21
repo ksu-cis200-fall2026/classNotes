@@ -7,7 +7,6 @@ public class Week9 {
         //then with CircleStatic
 
         //how to hold 5 circles?
-        Circle[] shapes = new Circle[5];
         
         //how to make first circle have radius 4?
     }
