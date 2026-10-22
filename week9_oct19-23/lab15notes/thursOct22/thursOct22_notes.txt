@@ -2,10 +2,22 @@ Project 7 due Friday
 
 Reading the input file.
 
+    read in #games (make array that size)
+    read blank line
+    loop to read each game information
+        read name
+        read year
+        ...now for the platforms
+        make a StringBuilder
+        while/do-while to read all the platforms
+            (look for a blank line to know when done)
+            append each platform onto StringBuilder with "," 
+        use split to break the StringBuilder into a String[]
+
 ///////////////////////////////////
 
 Look at Circle example.
-    --> add "getter" methods
+    --> add "getter" method
 
 
 static keyword.
@@ -25,6 +37,9 @@ null keyword
 Object class
 
 toString method
+    public String toString() {
+        returns a string about this object
+    }
 
 Add toString to Circle
 

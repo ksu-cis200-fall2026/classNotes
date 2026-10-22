@@ -6,6 +6,7 @@ public class Student {
 	//YOU DO THIS
 	//Write a constructor that takes information for each field and initializes them
 
+
 	//YOU DO THIS
 	//Write "getter" methods for each field
 	//still need major, GPA
