@@ -1,5 +1,5 @@
 Tutorial due today
-Labs today and Thursday
+Labs today and Wednesday
 Project 8 due Friday
     NOTE: this project doesn't rely on the lab material
     You can/should start now.
@@ -39,15 +39,15 @@ Shift cipher - example.
 
 "ball"
 key (0-25): 3
-"edoo"
-
-decrypt: "edoo", key 3
 
 
+How to decrypt?
 
-encrypt "zybra"
+
+
+encrypt "yay"
 key: 3
-"c..."
+
 
 
 
@@ -58,21 +58,7 @@ char example = 'A';
 example++; //example would be?
 
 
+//how to check if example is an upper-case letter?
 
 
-char letter = (some letter);
-int key = (some number, 0-25);
-
-
-
-How to encrypt letter?
-
-//is it lowercase?
-
-
-
-
-
-How to decrypt letter?
-
-Exception handling?
+**See lab starter code.

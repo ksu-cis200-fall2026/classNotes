@@ -1,5 +1,7 @@
 import java.util.*;
 
+//this could be the View of a bigger application
+
 public class ConsoleOps {
     private Scanner s;
 
@@ -9,7 +11,11 @@ public class ConsoleOps {
 
     public int getInteger() {
         System.out.print("Enter an integer: ");
-        return s.nextInt();
+        return Integer.parseInt(s.nextLine());
+    }
+
+    public void displayError(String msg) {
+        System.out.println("Error: " + msg);
     }
 
     public void printInteger(int num, String msg) {

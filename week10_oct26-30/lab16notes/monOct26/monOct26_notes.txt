@@ -16,17 +16,22 @@ Program design.
 
 Model-View-Controller (MVC).
 
-Model: ?
+Model: store data, do operations (logic/brains)
 
-View: ?
+View: input/output
 
-Controller: ?
+Controller: controls the program, calls back and forth
+    between view and model (this is the main method for us)
 
 
 ///////////////////////
 
 Exception handling.
 
+System.out.print("Enter number: ")
+int num = s.nextInt();
+
+right now, would crash if typed something except an int
 
 
 Example: console ops
@@ -39,28 +44,33 @@ Shift cipher - example.
 
 "ball"
 key (0-25): 3
-"edoo"
 
-decrypt: "edoo", key 3
+edoo
+
+How to decrypt? ball
 
 
 
-encrypt "zybra"
+encrypt "yay"
 key: 3
-"c..."
 
+bdb
 
 
 
 ASCII values
 
 char example = 'A';
-example++; //example would be?
+example++; //example would be? 'B'
 
 
-if (example <= 'a' && example <= 'd') {
-    //what does this do?
-}
+//how to check if example is an upper-case letter?
+
+//'A' 65
+//'B' 66
+//...
+//'Z' 90
+if (example >= 'A' && example <= 'Z')
 
 
 **See lab starter code.
