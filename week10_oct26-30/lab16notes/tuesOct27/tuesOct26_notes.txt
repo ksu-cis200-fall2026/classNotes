@@ -1,0 +1,78 @@
+Tutorial due today
+Labs today and Thursday
+Project 8 due Friday
+    NOTE: this project doesn't rely on the lab material
+    You can/should start now.
+
+/////////////////////
+
+Today:
+- Model-View-Controller
+- Exception handling
+
+//////////////////////
+
+Program design.
+
+Model-View-Controller (MVC).
+
+Model: ?
+
+View: ?
+
+Controller: ?
+
+
+///////////////////////
+
+Exception handling.
+
+
+
+Example: console ops
+
+/////////////////////////
+
+Lab 16. 
+
+Shift cipher - example.
+
+"ball"
+key (0-25): 3
+"edoo"
+
+decrypt: "edoo", key 3
+
+
+
+encrypt "zybra"
+key: 3
+"c..."
+
+
+
+
+ASCII values
+
+char example = 'A';
+example++; //example would be?
+
+
+
+
+char letter = (some letter);
+int key = (some number, 0-25);
+
+
+
+How to encrypt letter?
+
+//is it lowercase?
+
+
+
+
+
+How to decrypt letter?
+
+Exception handling?
