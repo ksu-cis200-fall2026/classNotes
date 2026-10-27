@@ -12,4 +12,12 @@ public class EncryptionView {
     //getKey method: ask user for a key, return the key
     //printResult method: takes string result and description,
         //print the result
+
+    public void printResult(String result, String description) {
+        //result is either the encrypted or decrypted value
+        //description is "Encrypted: " or "Decrypted: "
+
+        //just need a single print statement to print
+            //description: result
+    }
 }

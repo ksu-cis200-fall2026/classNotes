@@ -1,5 +1,5 @@
-Tutorial due today
-Labs today and Wednesday
+Tutorial due yesterday
+Labs today and Thursday
 Project 8 due Friday
     NOTE: this project doesn't rely on the lab material
     You can/should start now.
@@ -16,20 +16,18 @@ Program design.
 
 Model-View-Controller (MVC).
 
-Model: ?
+Model: data and calculations
 
-View: ?
+View: all user input, and all display
 
-Controller: ?
+Controller: controls the flow of the Program  (main)
 
 
 ///////////////////////
 
-Exception handling.
+Example: adding numbers with MVC
 
-
-
-Example: console ops
+--> then add exception handling
 
 /////////////////////////
 
@@ -39,15 +37,16 @@ Shift cipher - example.
 
 "ball"
 key (0-25): 3
+"edoo"
 
 
-How to decrypt?
+How to decrypt? same idea, shift backwards
 
 
 
 encrypt "yay"
 key: 3
-
+"bdb"
 
 
 
@@ -55,10 +54,12 @@ key: 3
 ASCII values
 
 char example = 'A';
-example++; //example would be?
+example++; //example would be? 'B'
 
 
 //how to check if example is an upper-case letter?
+
+if (example >= 'A' && example <= 'Z)
 
 
 **See lab starter code.
