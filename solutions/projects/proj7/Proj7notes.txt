@@ -1,0 +1,22 @@
+1. Different input file test.
+I created an alternate input file, altGames.txt, that contained only the first
+7 entries from games.txt. I then tested the program on that smaller input file,
+trying name/platform/year searches.
+
+2. Design comparison.
+Without a Game class to encapsulate all the information about a single game,
+we would have needed to create multiple arrays to store all game information
+(an array of game names, a 2D array of game platforms, and an array of years).
+We would need to ensure that entries at the same index in each of those arrays
+corresponded to the same game. This would introduce more opportunities for errors,
+as the information would be scattered across storage locations instead of kept
+together. It also would have been more challenging to store the platforms, as
+different games have different numbers of platforms.
+
+On the other hand, I imagine that the lines of code in the non-object-oriented
+implementation would be fewer than in the object-oriented version. 
+
+3. Error and fix. 
+Initially, my program expected a blank line after the very last game's
+information, and it crashed when such a line didn't exist.
+I needed to add a special case for reaching the end of the file.
