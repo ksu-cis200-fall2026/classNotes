@@ -1,6 +1,4 @@
 Project 8 due Friday
-    Update in requirements: error handling if key 
-    contains non-alphabet letters
 
 Four square cipher - example
     key1: thisisatest
@@ -13,6 +11,9 @@ How to construct the squares?
 ////////////////////////////////////
 
 ResizeableArray
+    - store a bunch of items
+    - it will grow as we need, not limited in size
+    - can store any kind of reference type, they are all objects
 
 
 Make ResizeableArray of Circles
@@ -24,10 +25,12 @@ Afterward, print the ones that have an area between 5-10
 
 MVC setup reminder
 
-model: store data, do the computations (Student, Course)
-view: print, user input
-controller: control flow (main)
+model? stores data, does calculations
+view? input/output
+controller? control stuff (main)
 
 ///////////////////////
 
 Look at lab 17 starter files
+
+--> which parts are the model/view/controller?

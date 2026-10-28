@@ -1,16 +1,20 @@
 public class Course {
 	//YOU DO THIS
 	//Update the class to store students in a ResizeableArray field instead of a Student[] field
-	private Student[] roster;
+	//private Student[] roster;
 
-	private int size;
+	private ResizeableArray roster;
+
+	//private int size;
 	
+	//Get rid of capacity parameter
 	public Course(int capacity) {
 		//YOU DO THIS
 		//Update the constructor to use the ResizeableArray field
 
-		roster = new Student[capacity];
-		size = 0;
+		//roster = new Student[capacity];
+		roster = new ResizeableArray();
+		//size = 0;
 	}
 	
 	public void addStudent(String name, String major, double gpa) {
