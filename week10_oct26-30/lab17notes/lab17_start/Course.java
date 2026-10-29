@@ -5,27 +5,31 @@ public class Course {
 
 	private ResizeableArray roster;
 
+	//don't need size
 	//private int size;
 	
 	//Get rid of capacity parameter
-	public Course(int capacity) {
+	public Course() {
 		//YOU DO THIS
 		//Update the constructor to use the ResizeableArray field
 
 		//roster = new Student[capacity];
 		roster = new ResizeableArray();
+
 		//size = 0;
 	}
 	
-	public void addStudent(String name, String major, double gpa) {
+	public void addStudent(Student stud) {
 		//YOU DO THIS
 		//Update this method to take a Student object as parameter instead of the name/major/gpa describing a student
 		//Further update the method to use your ResizeableArray
 
-		if (size < roster.length) {
-			roster[size] = new Student(name, major, gpa);
-			size++;
-		}
+		roster.add(stud);
+
+		//if (size < roster.length) {
+			//roster[size] = new Student(name, major, gpa);
+			//size++;
+		//}
 	}
 	
 	public void printStudentsWithMajor(String m) {
