@@ -1,0 +1,6 @@
+Bob Bryson,CS,3.4
+Jill Jones,MATH,3.7
+Tyler Thompson,CS,3.8
+Mary Miller,CMPEN,4.0
+Fred Flinstone,ENGL,2.8
+Alice Adams,CHEM, 3.1
