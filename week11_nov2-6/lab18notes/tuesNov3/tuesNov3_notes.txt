@@ -1,0 +1,26 @@
+Tutorial due yesterday
+Labs today and Thursday
+Project 9 due Friday
+
+//////////////////////
+
+Inheritance.
+
+Idea?
+
+See Person class.
+
+How to make Student class?
+
+How to call the parent version of a method?
+
+///////////////////////
+
+Override annotation
+
+///////////////////////
+
+Lab 18.
+
+--> how does electronic access work?
+

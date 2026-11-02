@@ -1,0 +1,22 @@
+public class Person {
+    //what to change about these?
+    private String name;
+    private int age;
+
+    public Person(String n, int a) {
+        name = n;
+        age = a;
+    }
+
+    public String getType() {
+        return "Person";
+    }
+
+    public String toString() {
+        return String.format("%s, age %d", name, age);
+    }
+
+    public void birthday() {
+        year++;
+    }
+}
