@@ -1,12 +1,15 @@
 //what to do with Book?
 
-public class Textbook {
+public class Textbook extends Book {
     //Fields for the title, author, publication year, 
     //number of pages, are optionally used, 
     //and optionally include electronic access 
 
+    //only define used and electronic access here
+
     //constructor to initialize fields
     //(electronic access is always initially false)
+    //don't pass electronic access as parameter to constructor
 
     //method to add electronic acces
         //(ONLY if meet criteria: new and since 2020)
