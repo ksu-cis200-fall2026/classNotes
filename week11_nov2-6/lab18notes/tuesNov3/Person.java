@@ -1,7 +1,7 @@
 public class Person {
     //what to change about these?
-    private String name;
-    private int age;
+    protected String name;
+    protected int age;
 
     public Person(String n, int a) {
         name = n;
@@ -17,6 +17,6 @@ public class Person {
     }
 
     public void birthday() {
-        year++;
+        age++;
     }
 }
