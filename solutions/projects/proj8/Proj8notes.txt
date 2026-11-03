@@ -1,0 +1,21 @@
+1. Error condition test cases
+    1) First key: "ab!cd", second key: "test"
+        Outputs: "Error: At least one key contains non-alphabet characters"
+    2) First key: "first", second key: "test:
+        Enter "f" as encrypt or decrypt option.
+        Outputs: "Error: Invalid menu option"
+    3) First key: "first", second key: "test", option: "d", ciphertext: "abc"
+        Outputs: "Error: Ciphertext must be an even length
+
+2. Security, part 1
+If either key is the empty string (which is allowed), then the ciphertext will be the same as the plaintext.
+If the two keys are equal, the ciphertext will be similar to that of a shift cipher (i.e., replacing each plaintext
+    letter with a later alphabet letter). This drastically reduces the effort needed to break the cipher.
+
+3. Security, part 2
+There are two 5x5 squares which each have permutations of alphabet letters. Each square has 25! possible arrangements.
+The most straightforward brute force would require testing each of these possible squares, which would infeasible.
+Alternately, a hacker could look at repeated two letter sequences and guess their values based on frequency analysis of
+common words, as any pair of letters that appear multiple times at even intervals would produce the same ciphertext pair.
+
+4. Error and fix. (Describe any error and how it was fixed)

@@ -1,0 +1,143 @@
+Calling parent versions of methods
+
+///////////////////
+
+Project 9 due Friday
+
+RealNumber, RationalNumber, IntegerNumber
+
+What types are these?
+
+real: 
+
+rational: 
+
+integers: 
+
+RealNumber
+RationalNumber extends ?
+IntegerNumber extends ?
+
+///
+
+Creating real numbers:
+
+RealNumber one = new RealNumber(3.2);
+RealNumber two = new RealNumber(4.5);
+//how to add one and two?
+
+
+
+///
+
+public class RealNumber {
+    //field?
+
+    //constructor?
+
+    //plus method?
+
+    //others are similar
+}
+
+
+
+//start of RationalNumber
+public class RationalNumber extends RealNumber {
+    //fields?
+
+    //constructor?
+
+    //what should the operations look like?
+    public RealNumber plus(RealNumber another) {
+        //we know the calling object is a rational
+
+        //am I trying to add another rational?
+            //now find the new numerator and new denom of your result
+            //create and return a new RationalNumber with that info
+
+        //otherwise, must be trying to add it to a real
+    }
+}
+
+
+
+//start of IntegerNumber
+public class IntegerNumber extends RationalNumber {
+    //field?
+
+    //constructor?
+
+    //what should the operations look like?
+    public RealNumber plus(RealNumber another) 
+
+        //are you trying to add another integer?
+            //the result should be an integer
+        //else, call super
+}
+
+
+////
+
+After completing the number classes?
+
+hardcode creating different kinds of numbers
+try different operations
+
+
+///
+
+Next:
+
+Input is like: 
+2/6+ 3/4
+0.57 -4
+
+
+
+What to look for first?
+
+How to get the two numbers on either side?
+
+
+
+
+Then how to tell what kind of number?
+
+real number? 
+
+
+rational number? 
+
+
+no slash or decimal? 
+
+
+
+
+///////////////////
+
+enums
+
+public enum DayOfWeek {
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+}
+
+DayOfWeek day = DayOfWeek.Monday;
+
+
+////////////////////
+
+Look at lab 19 start.
+
+What information is common?
+
+What operations are common?
+
+What to do with unit cost?
