@@ -1,4 +1,5 @@
 public class Shirt {
+    //fields need to be protected
     private ShirtColor color;
     private int count;
     
@@ -18,8 +19,8 @@ public class Shirt {
         color = newColor;
     }
 
-    public double orderCost() {
-        double unitCost = 0;
+    protected double getUnitCost() {
+         double unitCost = 0;
         switch (color) {
             case White:
             case Black:
@@ -30,11 +31,18 @@ public class Shirt {
                 unitCost = 16.99;
                 break;
         }
+        return unitCost;
+    }
 
-        return count*unitCost;
+    public double orderCost() {
+        return count*getUnitCost();
+    }
+
+    protected String getName() {
+        return "Shirt";
     }
 
     public String toString() {
-        return String.format("Shirt order, color: %s, count: %d, cost: $%.2f", color, count, orderCost());
+        return String.format("%s order, color: %s, count: %d, cost: $%.2f", getName(), color, count, orderCost());
     }
 }

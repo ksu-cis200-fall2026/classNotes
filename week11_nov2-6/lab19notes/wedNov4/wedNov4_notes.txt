@@ -1,22 +1,20 @@
-Calling parent versions of methods
-
-///////////////////
-
 Project 9 due Friday
 
 RealNumber, RationalNumber, IntegerNumber
 
 What types are these?
 
-real: 
+real: all numbers that aren't imaginary
+    (whole, fractions, with decimals, etc.)
 
-rational: 
+rational: fraction of two whole numbers, like a/b
 
-integers: 
+integers: whole number
 
 RealNumber
-RationalNumber extends ?
-IntegerNumber extends ?
+RationalNumber extends RealNumber
+IntegerNumber extends RationalNumber
+    4 is really 4/1
 
 ///
 
@@ -24,7 +22,9 @@ Creating real numbers:
 
 RealNumber one = new RealNumber(3.2);
 RealNumber two = new RealNumber(4.5);
+
 //how to add one and two?
+RealNumber result = one.plus(two);
 
 
 
@@ -32,10 +32,19 @@ RealNumber two = new RealNumber(4.5);
 
 public class RealNumber {
     //field?
+    protected double val;
 
     //constructor?
+    public RealNumber(double v) {
+        val = v;
+    }
 
     //plus method?
+    //want: RealNumber result = one.plus(two);
+    public RealNumber plus(RealNumber other) {
+        RealNumber answer = new RealNumber(val + other.val);
+        return answer;
+    }
 
     //others are similar
 }
@@ -45,18 +54,34 @@ public class RealNumber {
 //start of RationalNumber
 public class RationalNumber extends RealNumber {
     //fields?
+    protected int num;
+    protected int denom;
 
     //constructor?
+    public RationalNumber(int n, int d) {
+        super(n/(double)d);
+        num = n;
+        denom = d;
+    }
 
     //what should the operations look like?
-    public RealNumber plus(RealNumber another) {
+    public RealNumber plus(RealNumber other) {
         //we know the calling object is a rational
 
         //am I trying to add another rational?
-            //now find the new numerator and new denom of your result
-            //create and return a new RationalNumber with that info
+        if (other instanceof RationalNumber) {
+            RationalNumber fraction = (RationalNumber) other;
 
-        //otherwise, must be trying to add it to a real
+            //can find the new numerator and denominator of
+            //the result fraction using num, denom, fraction.num, fraction.denom
+
+            //return new RationalNumber with that info
+        }
+        else {
+            //otherwise, must be trying to add it to a real
+            return super.plus(other);
+        }
+        
     }
 }
 
@@ -64,9 +89,12 @@ public class RationalNumber extends RealNumber {
 
 //start of IntegerNumber
 public class IntegerNumber extends RationalNumber {
-    //field?
+    //field? you don't need one
 
     //constructor?
+    public IntegerNumber(int number) {
+        super(number, 1);
+    }
 
     //what should the operations look like?
     public RealNumber plus(RealNumber another) 
@@ -95,22 +123,24 @@ Input is like:
 
 
 
-What to look for first?
+What to look for first? the operator
 
-How to get the two numbers on either side?
+How to get the two numbers on either side? use substring
 
 
 
 
 Then how to tell what kind of number?
 
-real number? 
+real number? have a .
 
 
-rational number? 
+rational number? have a /
 
 
-no slash or decimal? 
+no slash or decimal? assume integer
+    try converting it to an int
+    catch any problems (means bad input)
 
 
 
@@ -140,4 +170,6 @@ What information is common?
 
 What operations are common?
 
-What to do with unit cost?
+What to do with orderCost/unit cost?
+
+What to do with toString/name?
