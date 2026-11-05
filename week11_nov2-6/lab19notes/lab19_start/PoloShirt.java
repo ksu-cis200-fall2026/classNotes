@@ -1,16 +1,18 @@
+
 //should extend Shirt
 public class PoloShirt {
-    //don't need these fields
+    //these fields should go away
     private ShirtColor color;
     private int count;
     
+    //keep it with no parameters
     public PoloShirt() {
-        //call super 
+        //need to call super
         color = ShirtColor.Black;
         count = 1;
     }
 
-    //should stay, override setColor in Shirt
+    //keep setColor, will override from Shirt
     public void setColor(ShirtColor newColor) {
         //only black and purple allowed
         if (newColor == ShirtColor.Black || newColor == ShirtColor.Purple) {
@@ -19,7 +21,8 @@ public class PoloShirt {
         //otherwise don't change the color
     }
 
-    //different from Shirt, keep to override
+    //leave this method here
+    //will override from Shirt
     public void setCount(int c) {
         if (c >= 1 && c <= 5) {
             count = c;
@@ -27,9 +30,9 @@ public class PoloShirt {
         //don't change count unless new value is 1-5
     }
 
-    //override getUnitCost
+    //override unit cost
 
-    //get rid of orderCost, because that should be the same as in Shirt
+    //get rid of orderCost (inherited from Shirt)
 
     public double orderCost() {
         double unitCost = 24.99;
@@ -37,9 +40,9 @@ public class PoloShirt {
         return count*unitCost;
     }
 
-    //override getName
+    //delete toString (inherit from Shirt)
 
-    //git rid of toString, use the one from Shirt
+    //override getName
 
     public String toString() {
         return String.format("Polo shirt order, color: %s, count: %d, cost: $%.2f", color, count, orderCost());

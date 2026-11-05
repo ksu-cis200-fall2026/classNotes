@@ -1,7 +1,6 @@
 public class Shirt {
-    //fields need to be protected
-    private ShirtColor color;
-    private int count;
+    protected ShirtColor color;
+    protected int count;
     
     public Shirt(ShirtColor c) {
         color = c;
@@ -19,8 +18,8 @@ public class Shirt {
         color = newColor;
     }
 
-    protected double getUnitCost() {
-         double unitCost = 0;
+    public double unitCost() {
+        double unitCost = 0;
         switch (color) {
             case White:
             case Black:
@@ -31,14 +30,15 @@ public class Shirt {
                 unitCost = 16.99;
                 break;
         }
+
         return unitCost;
     }
 
     public double orderCost() {
-        return count*getUnitCost();
+        return count*unitCost();
     }
 
-    protected String getName() {
+    public String getName() {
         return "Shirt";
     }
 

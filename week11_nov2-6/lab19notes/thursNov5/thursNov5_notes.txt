@@ -140,4 +140,4 @@ What information is common?
 
 What operations are common?
 
-What to do with unit cost?
+What to do with name and unit cost?
