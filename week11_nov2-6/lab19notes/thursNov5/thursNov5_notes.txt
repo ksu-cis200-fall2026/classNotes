@@ -1,22 +1,16 @@
-Calling parent versions of methods
-
-///////////////////
-
 Project 9 due Friday
 
 RealNumber, RationalNumber, IntegerNumber
 
 What types are these?
 
-real: 
-
-rational: 
-
-integers: 
+    real: all numbers that aren't imaginary (3, 2.5, 1/2)
+    rational: p/q write like a fraction
+    integers: whole nmbers
 
 RealNumber
-RationalNumber extends ?
-IntegerNumber extends ?
+RationalNumber extends RealNumber
+IntegerNumber extends RationalNumber
 
 ///
 
@@ -26,37 +20,62 @@ RealNumber one = new RealNumber(3.2);
 RealNumber two = new RealNumber(4.5);
 //how to add one and two?
 
-
+RealNumber result = one.plus(two);
 
 ///
 
 public class RealNumber {
     //field?
+    protected double val;
 
     //constructor?
+    public RealNumber(double num) {
+        val = num;
+    }
 
     //plus method?
+    public RealNumber plus(RealNumber other) {
+
+        RealNumber answer = new RealNumber(val+other.val);
+        return answer;
+    }
 
     //others are similar
 }
 
-
-
 //start of RationalNumber
 public class RationalNumber extends RealNumber {
     //fields?
+    protected int num;
+    protected int denom;
 
     //constructor?
+    public RationalNumber(int n, int d) {
+        super(n/(double)d);
+        num = n;
+        denom = d;
+    }
 
     //what should the operations look like?
     public RealNumber plus(RealNumber another) {
         //we know the calling object is a rational
 
-        //am I trying to add another rational?
-            //now find the new numerator and new denom of your result
-            //create and return a new RationalNumber with that info
+        if (another instanceof RationalNumber) {
+            RationalNumber rat = (RationalNumber) another;
+            int resultNum = using num, rat.num, denom, rat.denom
+            int resultDenom = using num, rat.num, denom, rat.denom
+            return new RationalNumber(resultNum, resultDenom);
+        }
+        else {
+            return super.plus(another);
+        }
 
-        //otherwise, must be trying to add it to a real
+        //am I trying to add another rational?
+            //find new numerator and denom of result
+            //create and return a new RationalNumber 
+                //with that info
+
+        //otherwise, trying to add it to a real
     }
 }
 
@@ -64,14 +83,20 @@ public class RationalNumber extends RealNumber {
 
 //start of IntegerNumber
 public class IntegerNumber extends RationalNumber {
-    //field?
+    //field? don't need
+
 
     //constructor?
+    public IntegerNumber(int num) {
+        //call the parent constructor
+        super(num,1);
+    }
 
     //what should the operations look like?
     public RealNumber plus(RealNumber another) 
 
         //are you trying to add another integer?
+            //use instanceof and cast
             //the result should be an integer
         //else, call super
 }
@@ -95,22 +120,25 @@ Input is like:
 
 
 
-What to look for first?
+What to look for first? the operator
 
 How to get the two numbers on either side?
+    use substring to get the two numbers
 
 
 
 
 Then how to tell what kind of number?
 
-real number? 
+real number? look for .
 
 
-rational number? 
+rational number? look for /
 
 
-no slash or decimal? 
+no slash or decimal? assume an integer
+    try converting number to int
+    catch and handle any problems
 
 
 

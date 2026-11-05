@@ -1,6 +1,6 @@
 
 //should extend Shirt
-public class PoloShirt {
+public class PoloShirt extends Shirt {
     //these fields should go away
     private ShirtColor color;
     private int count;
@@ -31,19 +31,22 @@ public class PoloShirt {
     }
 
     //override unit cost
+    public double getUnitCost() {
+        return 24.99;
+    }
 
     //get rid of orderCost (inherited from Shirt)
 
+    //delete this method
     public double orderCost() {
         double unitCost = 24.99;
 
         return count*unitCost;
     }
 
-    //delete toString (inherit from Shirt)
+    //need to override getName to return "Polo shirt"
 
-    //override getName
-
+    //toString goes away
     public String toString() {
         return String.format("Polo shirt order, color: %s, count: %d, cost: $%.2f", color, count, orderCost());
     }

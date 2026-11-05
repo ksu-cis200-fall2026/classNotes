@@ -2,6 +2,7 @@ public class Shirt {
     protected ShirtColor color;
     protected int count;
     
+    //don't change parameters to constructor
     public Shirt(ShirtColor c) {
         color = c;
         count = 1;
@@ -18,7 +19,7 @@ public class Shirt {
         color = newColor;
     }
 
-    public double unitCost() {
+    public double getUnitCost() {
         double unitCost = 0;
         switch (color) {
             case White:
@@ -35,7 +36,7 @@ public class Shirt {
     }
 
     public double orderCost() {
-        return count*unitCost();
+        return count*getUnitCost();
     }
 
     public String getName() {
