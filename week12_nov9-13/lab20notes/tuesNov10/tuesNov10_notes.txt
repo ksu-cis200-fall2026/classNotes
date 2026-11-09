@@ -1,0 +1,43 @@
+Tutorial due yesterday
+Labs today and Thursday
+Project 10 due Friday (last Java project)
+
+Next week: Exam 3
+
+After exam: start C#
+
+////////////////////////////
+
+ArrayList example: collection of circles
+
+ArrayList<Type> 
+
+no type casting needed
+
+////////////////////////////
+
+Interfaces.
+
+purpose? list of requirements for any class that implements it
+
+
+- write Nameable interface
+- make Circle implement Nameable
+
+////////////////////////////
+
+Dialogs
+
+- showInputDialog
+- showMessageDialog
+
+/////////////////////////////
+
+Lab.
+
+- redo student example to use ArrayList instead of ResizeableArray
+    (will we need to cast?)
+- make View interface, implement as ConsoleView and DialogView
+
+- make StudentView have a View field, call ITS methods
+    (will either use console or dialog, depending on View)
