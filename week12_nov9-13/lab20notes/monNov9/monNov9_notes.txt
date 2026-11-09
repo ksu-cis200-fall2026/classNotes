@@ -4,7 +4,7 @@ Project 10 due Friday (last Java project)
 
 Next week: Exam 3
 
-After exam: start C#
+After fall break: start C#
 
 ////////////////////////////
 
@@ -18,10 +18,10 @@ no type casting needed
 
 Interfaces.
 
-purpose? list of requirements for any class that implements it
+purpose? a list of requirements for a class
 
 
-- write Nameable interface
+- write Nameable interface - need a getName() method
 - make Circle implement Nameable
 
 ////////////////////////////
