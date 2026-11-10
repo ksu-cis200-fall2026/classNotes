@@ -1,4 +1,4 @@
-public class Circle  {
+public class Circle implements Nameable {
     //fields
     private double radius;
     public static final double PI = 3.14;
@@ -29,5 +29,9 @@ public class Circle  {
 
     public String toString() {
         return String.format("Radius: %.2f, area: %.2f%n", radius, area());
+    }
+
+    public String getName() {
+        return "Circle";
     }
 }

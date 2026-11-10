@@ -4,7 +4,7 @@ Project 10 due Friday (last Java project)
 
 Next week: Exam 3
 
-After exam: start C#
+After fall break: start C#
 
 ////////////////////////////
 
@@ -18,7 +18,7 @@ no type casting needed
 
 Interfaces.
 
-purpose? list of requirements for any class that implements it
+purpose? a to do list, a list of requirements
 
 
 - write Nameable interface
@@ -41,3 +41,23 @@ Lab.
 
 - make StudentView have a View field, call ITS methods
     (will either use console or dialog, depending on View)
+
+
+View: all printing, all user input 
+
+
+View interface:
+
+public interface View {
+    String getInput(String prompt);
+    void displayResult(String result);
+}
+
+Have a ConsoleView class that implements View:
+    getInput will use a Scanner
+    displayResult will print to the console
+
+Have a DialogView class that implements View:
+    getInput: use showInputDialog
+    displayResult: use showMessageDialog
+
