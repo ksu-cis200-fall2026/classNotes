@@ -1,7 +1,0 @@
-DnD? parent class: base mob. hit points, armor class. 
-
-menu, like 400.
-    base: byo pizza. Choose crust, size, toppings. calories, cost based on choices.
-    children: specialty pizzas. Different crust/size/toppings restrictions, different price calculations.
-
-    repeatedly loop to let user order, print receipt afterwards
