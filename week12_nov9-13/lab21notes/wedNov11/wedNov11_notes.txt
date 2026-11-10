@@ -1,0 +1,179 @@
+Project 10 due Friday (last Java project)
+
+Exam 3 is Wednesday, November 18
+- will post exam information
+- will do short review Monday, November 16
+
+Will start C# after fall break
+
+////////////////////////////
+
+Project 10.
+
+public interface SomeInterface {
+    //list of requirements
+}
+
+
+
+How to make another interface require things from SomeInterface, 
+    plus extra?
+
+public interface AnotherInterface extends SomeInterface {
+    //other requirements
+}
+
+
+
+How to implement that new interface?
+
+public class SomeClass implements AnotherInterface {
+    //meet all SomeInterface requirements
+
+    //meet all AnotherInterface requirements
+}
+
+
+To implement TWO interfaces
+
+public class SomeClass implements Interface1, Interface2 {
+    //meet all Interface1 requirements
+
+    //meet all Interface2 requirements
+}
+
+
+//////////////////////////////////////
+
+Creating random grocery order of 5-10 random items
+
+use a Random number generator
+
+how to get a random number of items?
+    get a random number that can be 5-10
+
+    how to pick a random item? (there are 6 types)
+    pick a random number that corresponds to which item
+
+    generate 0: apple
+    generate 1: tortilla chips
+
+    how to pick a random configuration?
+        e.g.: donuts
+            glazed/plain
+            count 1-12
+
+        generate a random number with two values
+            0: glazed, 1: plain
+            generate random number 1-12 for count
+
+////////////////////////////
+
+Classes with no constructor
+
+public class Eggs {
+    //methods
+
+    //no constructor
+}
+
+if no constructor, one is automatically generated:
+
+public Eggs() {
+    //initializes fields to defaults
+}
+
+
+so we can do:
+
+Eggs e = new Eggs();
+
+////////////////////////////
+
+Comparing strings.
+
+String s1 = "banana";
+String s2 = "apple";
+
+if (s1.compareTo(s2) < 0) {
+    //s1 comes first (before s2)
+    //s1 < s2
+}
+else if (s1.compareTo(s2) > 0) {
+    //s1 comes later (after s2)
+    //s1 > s2
+}
+else {
+    //s1 equals s2
+    //compareTo returns 0
+}
+
+
+////////////////////////////
+
+TreeSet.
+
+How are things stored? in sorted order
+        not a linear way
+    order? 
+    duplicates? no duplicates 
+
+
+What kinds of things can be added?
+must implement Comparable interface 
+
+public interface Comparable<T> {
+    int compareTo(T elem);
+}
+
+
+What do we do to a class if we want to store those objects 
+    in a TreeSet?
+
+
+///////////////////////////
+
+Goal: TreeSet of type Person.
+
+Sort by name, then by age
+
+///////////////////////////
+
+Lab.
+
+TreeSet of Shapes. 
+
+
+--> what to do to Shape interface?
+
+public interface Shape extends Comparable<Shape>
+
+
+--> now what do all shapes need? 
+
+add a compareTo method
+
+
+order first by shape name, then by characteristics
+
+
+
+
+pretend we are in Rectangle:
+
+public int compareTo(Shape s) {
+    //how to tell if s is another rectangle?
+    if (s instanceof Rectangle) {
+        //compare this rectangle's area and s's area
+        //similar to Person ages
+    }
+    else {
+        //all shapes have a name() method
+        //uses string comparison
+        return name().compareTo(s.name());
+    }
+
+    //if s is not another rectangle, compare names
+
+    //otherwise (both rectangles), compare the areas
+}

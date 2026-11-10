@@ -9,7 +9,6 @@ public class Week12 {
         //make 10 circles, with random radius
         //from 2-10
 
-        /*
         ArrayList<Circle> r = new ArrayList<Circle>();
 
         //we add circles with radius 2-10, even numbers
@@ -37,8 +36,7 @@ public class Week12 {
         //Nameable n = new Nameable();
 
         Nameable n = new Circle();
-        String name = n.getName();
-        */
+        String cirName = n.getName();
 
         //can we create an object of an interface type?
 
