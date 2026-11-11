@@ -1,0 +1,138 @@
+Project 10 due Friday (last Java project)
+
+Exam 3 is Thursday, November 19
+- will post exam information
+- will do short review Tuesday, November 17
+
+Will start C# after fall break
+
+////////////////////////////
+
+Project 10.
+
+public interface SomeInterface {
+    //list of requirements
+}
+
+
+
+How to make AnotherInterface require things from SomeInterface, 
+    plus extra?
+
+public interface AnotherInterface ...?
+
+
+
+How to implement AnotherInterface?
+
+public class SomeClass ...? {
+    //what is required?
+}
+
+
+To implement BOTH Interface1, Interface2?
+
+public class SomeClass ...? {
+    //what is required?
+}
+
+
+//////////////////////////////////////
+
+Creating random grocery order of 5-10 random items
+
+how to get a random number of items?
+    how to pick a random item? 
+
+    how to pick a random configuration?
+        e.g.: donuts
+
+////////////////////////////
+
+Classes with no constructor
+
+public class Eggs {
+    //methods
+
+    //no constructor
+}
+
+how to create an Eggs object?
+
+////////////////////////////
+
+Comparing strings.
+
+String s1 = "banana";
+String s2 = "apple";
+
+if (s1.compareTo(s2) < 0) {
+    //s1 comes first (before s2)
+    //s1 < s2
+}
+else if (s1.compareTo(s2) > 0) {
+    //s1 comes later (after s2)
+    //s1 > s2
+}
+else {
+    //s1 equals s2
+    //compareTo returns 0
+}
+
+
+////////////////////////////
+
+TreeSet.
+
+How are things stored? 
+    order? 
+    duplicates? 
+
+
+What kinds of things can be added?
+must implement Comparable interface 
+
+public interface Comparable<T> {
+    int compareTo(T elem);
+}
+
+
+What do we do to a class if we want to store those objects 
+    in a TreeSet?
+
+
+///////////////////////////
+
+Goal: TreeSet of type Person.
+
+Sort by name, then by age
+
+///////////////////////////
+
+Lab.
+
+TreeSet of Shapes. 
+
+
+--> what to do to Shape interface?
+
+
+--> now what do all shapes need? 
+
+add a compareTo method
+
+
+order first by shape name, then by characteristics
+
+
+
+
+pretend we are in Rectangle:
+
+public int compareTo(Shape s) {
+    //how to tell if s is another rectangle?
+
+    //if s is not another rectangle, compare names
+
+    //otherwise (both rectangles), compare the areas
+}

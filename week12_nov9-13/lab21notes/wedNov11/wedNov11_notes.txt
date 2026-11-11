@@ -16,30 +16,24 @@ public interface SomeInterface {
 
 
 
-How to make another interface require things from SomeInterface, 
+How to make AnotherInterface require things from SomeInterface, 
     plus extra?
 
-public interface AnotherInterface extends SomeInterface {
-    //other requirements
+public interface AnotherInterface ...?
+
+
+
+How to implement AnotherInterface?
+
+public class SomeClass ...? {
+    //what is required?
 }
 
 
+To implement BOTH Interface1, Interface2?
 
-How to implement that new interface?
-
-public class SomeClass implements AnotherInterface {
-    //meet all SomeInterface requirements
-
-    //meet all AnotherInterface requirements
-}
-
-
-To implement TWO interfaces
-
-public class SomeClass implements Interface1, Interface2 {
-    //meet all Interface1 requirements
-
-    //meet all Interface2 requirements
+public class SomeClass ...? {
+    //what is required?
 }
 
 
@@ -47,25 +41,11 @@ public class SomeClass implements Interface1, Interface2 {
 
 Creating random grocery order of 5-10 random items
 
-use a Random number generator
-
 how to get a random number of items?
-    get a random number that can be 5-10
-
-    how to pick a random item? (there are 6 types)
-    pick a random number that corresponds to which item
-
-    generate 0: apple
-    generate 1: tortilla chips
+    how to pick a random item? 
 
     how to pick a random configuration?
         e.g.: donuts
-            glazed/plain
-            count 1-12
-
-        generate a random number with two values
-            0: glazed, 1: plain
-            generate random number 1-12 for count
 
 ////////////////////////////
 
@@ -77,16 +57,7 @@ public class Eggs {
     //no constructor
 }
 
-if no constructor, one is automatically generated:
-
-public Eggs() {
-    //initializes fields to defaults
-}
-
-
-so we can do:
-
-Eggs e = new Eggs();
+how to create an Eggs object?
 
 ////////////////////////////
 
@@ -113,10 +84,9 @@ else {
 
 TreeSet.
 
-How are things stored? in sorted order
-        not a linear way
+How are things stored? 
     order? 
-    duplicates? no duplicates 
+    duplicates? 
 
 
 What kinds of things can be added?
@@ -146,8 +116,6 @@ TreeSet of Shapes.
 
 --> what to do to Shape interface?
 
-public interface Shape extends Comparable<Shape>
-
 
 --> now what do all shapes need? 
 
@@ -163,15 +131,6 @@ pretend we are in Rectangle:
 
 public int compareTo(Shape s) {
     //how to tell if s is another rectangle?
-    if (s instanceof Rectangle) {
-        //compare this rectangle's area and s's area
-        //similar to Person ages
-    }
-    else {
-        //all shapes have a name() method
-        //uses string comparison
-        return name().compareTo(s.name());
-    }
 
     //if s is not another rectangle, compare names
 
