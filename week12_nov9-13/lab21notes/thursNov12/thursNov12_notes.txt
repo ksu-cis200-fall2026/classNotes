@@ -19,33 +19,52 @@ public interface SomeInterface {
 How to make AnotherInterface require things from SomeInterface, 
     plus extra?
 
-public interface AnotherInterface ...?
+public interface AnotherInterface extends SomeInterface {
+    //have its own requirements
+}
 
 
 
 How to implement AnotherInterface?
 
-public class SomeClass ...? {
+public class SomeClass implements AnotherInterface {
     //what is required?
+    //everything from BOTH (AnotherInterface and SomeInterface)
 }
 
 
 To implement BOTH Interface1, Interface2?
 
-public class SomeClass ...? {
+public class SomeClass implements Interface1, Interface2 {
     //what is required?
+    //everythin from BOTH (Interface1 and Interface2)
 }
 
 
 //////////////////////////////////////
 
+Random r = new Random();
+
 Creating random grocery order of 5-10 random items
+r.nextInt(5,11) (between 5-10)
 
 how to get a random number of items?
     how to pick a random item? 
+        6 possible types of items
+        generate random number, 0-5
+            0: chips
+            1: donuts
+            2: apple
 
     how to pick a random configuration?
         e.g.: donuts
+            1-12
+                (generate number from 1-12, use that)
+            frosted/unfrosted
+                generate random number with 2 values
+                    0 = frosted
+                    1 = unfrosted
+
 
 ////////////////////////////
 
@@ -55,9 +74,12 @@ public class Eggs {
     //methods
 
     //no constructor
+    //so compiler automatically creates:
+        public Eggs() { }
 }
 
 how to create an Eggs object?
+    Eggs e = new Eggs();
 
 ////////////////////////////
 
@@ -67,16 +89,18 @@ String s1 = "banana";
 String s2 = "apple";
 
 if (s1.compareTo(s2) < 0) {
-    //s1 comes first (before s2)
+    //means s1 comes before s2 (alphabetically)
     //s1 < s2
+
 }
 else if (s1.compareTo(s2) > 0) {
-    //s1 comes later (after s2)
+    //means s1 comes after s2 (alphabetically)
     //s1 > s2
+
 }
 else {
-    //s1 equals s2
-    //compareTo returns 0
+    //otherwise, compareTo is 0, means s1 equals s2
+
 }
 
 
@@ -85,12 +109,13 @@ else {
 TreeSet.
 
 How are things stored? 
-    order? 
-    duplicates? 
+    order?  sorted 
+    duplicates?  no duplicates 
 
 
 What kinds of things can be added?
-must implement Comparable interface 
+    items that can be compared 
+
 
 public interface Comparable<T> {
     int compareTo(T elem);
@@ -98,7 +123,7 @@ public interface Comparable<T> {
 
 
 What do we do to a class if we want to store those objects 
-    in a TreeSet?
+    in a TreeSet? need to implement Comparable
 
 
 ///////////////////////////
@@ -115,11 +140,13 @@ TreeSet of Shapes.
 
 
 --> what to do to Shape interface?
+    public interface Shape extends Comparable<Shape>
 
 
 --> now what do all shapes need? 
 
-add a compareTo method
+    need a compareTo 
+
 
 
 order first by shape name, then by characteristics
@@ -130,9 +157,21 @@ order first by shape name, then by characteristics
 pretend we are in Rectangle:
 
 public int compareTo(Shape s) {
-    //how to tell if s is another rectangle?
+    //if both rectangles, compare the areas
+    if (s instanceof Rectangle)
+        //you might need to do a cast first
+        //compare my area() to s.area()
+        //just like comparing ages for Person
+    else    
+        return however my name() compares to s.name()
+        //just like comparing names for Person
 
-    //if s is not another rectangle, compare names
-
-    //otherwise (both rectangles), compare the areas
+    //if different kinds of shapes, compare names
 }
+
+
+right triangle
+
+
+Square extends Rectangle    
+    public Square(int side)
