@@ -15,6 +15,7 @@ Exam 3 review
 Topics:
 - **General classes (fields, constructors, methods, creating and
     using objects)
+
 - New keywords: static, null, instanceof, private, public,
     protected, interface, implements, extends
 
@@ -22,18 +23,38 @@ Topics:
 - Arrays of objects
 - Exception handling
     try/catch
-    when to use ?
+
+    try {
+
+    }
+    catch(TypeOfException ex) {
+
+    }
+
+    when to use ? reading files, user input
+
 
     throwing exceptions - when?
         
         --> ok to always use IllegalArgumentException
 
+    have a method that I'm writing
+    supposed to return a value
+
+    public int divide(int a, int b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("division by zero");
+        }
+        else {
+            return a/b;
+        }
+    }
 
 
 - MVC architecture
-    M - ?
-    V - ?
-    C - ?
+    M - ? model (holds data, does calculations)
+    V - ? view (user input / output)
+    C - ? controller (control, communicates back and forth between model and view)
 
 
 
@@ -42,16 +63,39 @@ Topics:
 public class A {
     protected int x;
 
-    public void doStuff() {
+    public A(int num) {...}
 
-    }
+    public void doStuff() {...}
 }
 
 --> how to extend class A?
+
+public class B extends A {
+    //inherit int x
+
+    public B() {
+        super(4);
+    }
+
+    //inherit doStuff
+
+    //overriding
+    public void doStuff() {...}
+}
+
+A example = new B();
+example.doStuff();
+
+
 --> what is inherited?
 --> method overriding?
 
 (what is method overloading?)
+
+same method name, different parameters
+
+r.nextInt(4);
+r.nextInt(1,3);
 
 
 
@@ -64,6 +108,8 @@ public class A {
     p2.birthday();
 
 - Interfaces, implementing an interface
+
+
 - Java collections (ArrayList, TreeSet, HashMap)
 
 add elements, get an element, loop, see if an element exists
@@ -78,6 +124,8 @@ Java HashMap.
 
 What is stored for each item?
 
+key, value
+
 
 keys: must be unique
 
@@ -85,11 +133,32 @@ keys: must be unique
 
 Want keys to be names, values to be Person objects
 
+HashMap<String, Person> map = new HashMap<String, Person>();
+
 
 --> add a few people 
 
+Bob, 20
+map.put("Bob", new Person("Bob", 20));
+map.put("Alice", new Person("Alice", 10));
+map.put("George", new Person("George", 30));
+
+//updates the Bob entry to have a new person object
+map.put("Bob", new Person("Bob", 40));
+
+
 --> how would we find the oldest one?
 
+int age = 0;
+Person oldest = null;
+for (String n : map.keySet()) {
+    Person p = map.get(n);
+    if (p.getAge() > age) {
+        age = p.getAge();
+        oldest = p;
+    }
+}
+System.out.println(oldest);
 
 
 
@@ -104,3 +173,15 @@ values: Student object
 What is the file format?
 
 What do we do when we see a name: score?
+
+
+reading the input file, have current name and score
+    have I seen that student before?
+    use containsKey to see if name is in HashMap
+    if it is:
+        use get to get the existing Student with that name
+        call addScore on that Student to add the new score
+    if name isn't already in HashMap:
+        create a new Student object with that name
+        call addScore on your new Student to add that score
+        call put to add the new Student to your HashMap
