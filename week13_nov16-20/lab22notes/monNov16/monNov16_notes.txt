@@ -1,0 +1,106 @@
+Tutorial due today
+Exam 3 is Wednesday, November 18
+No project this week
+
+(We start C# after fall break. You will install
+.NET so you can use VS Code for C# development.)
+
+///////////////////////////
+
+Exam 3 review
+- Closed notes/closed computers
+- Can use full time
+- Part multiple choice, part "open-ended"
+
+Topics:
+- **General classes (fields, constructors, methods, creating and
+    using objects)
+- New keywords: static, null, instanceof, private, public,
+    protected, interface, implements, extends
+
+
+- Arrays of objects
+- Exception handling
+    try/catch
+    when to use ?
+
+    throwing exceptions - when?
+        
+        --> ok to always use IllegalArgumentException
+
+
+
+- MVC architecture
+    M - ?
+    V - ?
+    C - ?
+
+
+
+- Inheritance, extending a class, overriding
+
+public class A {
+    protected int x;
+
+    public void doStuff() {
+
+    }
+}
+
+--> how to extend class A?
+--> what is inherited?
+--> method overriding?
+
+(what is method overloading?)
+
+
+
+
+- Object class methods (toString, equals)
+    
+- objects as references
+    Person p1 = new Person("Bob", 20);
+    Person p2 = p1;
+    p2.birthday();
+
+- Interfaces, implementing an interface
+- Java collections (ArrayList, TreeSet, HashMap)
+
+add elements, get an element, loop, see if an element exists
+
+///////////////////////////
+
+Work some practice problems?
+
+///////////////////////////
+
+Java HashMap. 
+
+What is stored for each item?
+
+
+keys: must be unique
+
+
+
+Want keys to be names, values to be Person objects
+
+
+--> add a few people 
+
+--> how would we find the oldest one?
+
+
+
+
+////////////////////////////
+
+Lab goal: use HashMap to lookup/update student information by name
+
+HashMap called "map"
+keys: names
+values: Student object
+
+What is the file format?
+
+What do we do when we see a name: score?
