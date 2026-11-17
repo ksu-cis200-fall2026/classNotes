@@ -23,36 +23,56 @@ Topics:
 - Arrays of objects
 - Exception handling
     try/catch
-    when to use ?
+    when to use ? working with files, user input
 
-    throwing exceptions - when?
-        
-        --> ok to always use IllegalArgumentException
+    throwing exceptions
 
 
 
 - MVC architecture
-    M - ?
-    V - ?
-    C - ?
+    M - ? model (store data, do calculations)
+    V - ? view (input/output)
+    C - ? controller (main, controls flow)
 
 
 
 - Inheritance, extending a class, overriding
 
-public class A {
+public class Parent {
     protected int x;
 
-    public A(int num) { x = num; }
+    public Parent(int num) { x = num; }
 
     public void doStuff() {...}
 }
 
---> how to extend class A?
+--> how to extend class Parent?
+
+public class Child extends Parent {
+    //inherit x, doStuff
+
+    public Child() {
+        super(4);
+    }
+
+    //overriding
+    public void doStuff() {...}
+
+    //overloading
+    public void doStuff(int x) {...}
+}
+
+Parent p = new Child();
+p.doStuff();    //will call the child version
+
+Child c = new Parent(4); //NO! Parent is not necessarily a Child
+
+
 --> what is inherited?
 --> method overriding?
 
 (what is method overloading?)
+
 
 
 
@@ -78,6 +98,7 @@ Work some practice problems?
 Java HashMap. 
 
 What is stored for each item?
+(key, value)
 
 
 keys: must be unique
@@ -86,11 +107,30 @@ keys: must be unique
 
 Want keys to be names, values to be Person objects
 
+HashMap<String, Person> map = new HashMap<String, Person>();
+
 
 --> add a few people 
 
+//Bob, 20
+map.put("Bob", new Person("Bob", 20));
+map.put("Alice", new Person("Alice", 30));
+map.put("George", new Person("George", 10));
+map.put("Bob", new Person("Bob", 22)); //replaces the other Bob
+
+
 --> how would we find the oldest one?
 
+int oldestAge = 0;
+Person oldestPerson = null;
+for (String name : map.keySet()) {
+    Person cur = map.get(name);
+    if (cur.getAge() >= oldestAge) {
+        oldestAge = cur.getAge();
+        oldestPerson = cur;
+    }
+}
+//oldestPerson IS the oldest
 
 
 
@@ -105,3 +145,13 @@ values: Student object
 What is the file format?
 
 What do we do when we see a name: score?
+
+Bob: 87
+
+name, score
+
+use containsKey to see if name is already in HashMap
+if it is:
+    get that student, add the new score
+if it isn't:
+    make a new student, add the score, add to HashMap
