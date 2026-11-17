@@ -1,0 +1,59 @@
+1. Project design analysis. 
+Suppose you had tried to create your GroceryOrder class before creating your 
+    different interfaces. 
+How would you have created a collection of grocery items at that point? 
+How would you have determined which items were countable and 
+    which items had a discount?
+
+We would still be able to store grocery items in an ArrayList, but we would need
+to use Object as the type instead of GroceryItem to be able to accommodate all
+items. This would require a lot of type checking when iterating over the list 
+(using instanceof with each type of item to categorize it before type
+casting).
+
+Each grocery item wouldn't be marked as "countable" or "discounted" without
+the use of interfaces, so our GroceryOrder class would have to know which specific
+items involved counts or discounts (and would again have to use a lot of 
+type checking/casting to filter those items out of a list).
+
+Both things could have been done without interfaces, but the code would be a 
+lot messier and more difficult to maintain. (For example, if we changed oranges
+to no longer have a count, we would have to know to also change relevant code
+in GroceryOrder to not treat oranges as countable anymore.)
+
+
+2. Additional interface. 
+What is another category of grocery items that all share at a particular feature?
+How could you create an interface to require that particular grocery items 
+    implemented those features?
+Name at least three grocery items where it would make sense for you to implement 
+    that interface.
+
+An additional category could be, "Perishable", for food items that had a limited
+shelf life. This could become a new interface with methods such as:
+    String getExpirationDate()
+    boolean needsRefrigeration()
+Grocery items that might implement Perishable are RawChicken and Orange.
+
+
+3. Test coverage. 
+The testing for this project is limited to creating a random grocery order and 
+a specific grocery order. Are those two things enough to show us that our 
+implementation will always work correctly? If not, describe what kinds of 
+additional tests you would need to convince yourself that everything worked as
+intended.
+
+No, those types of grocery orders only test a limited number of features in our
+project. We would need test cases to:
+- Create each grocery item in each combination, ensuring that all properties
+    (type, price, discounted price [if relevant], name, type, count [if relevent],
+    and other properties unique to different grocery items) were as expected.
+- Ensure that the expected grocery items really do implement the correct 
+    interfaces (using instanceof), to be sure that they will be appropriately
+    categorized
+
+
+4. Error and fix.
+Describe an error you made when writing the program. How did you fix it?
+
+(Describe any error and the fix.)
